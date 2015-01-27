@@ -4,115 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/main.css">
+     <!-- Smooth Page scroll -->
+              <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.js"></script>
+              <script type="text/javascript">
+                $(window).load(function(){
+                $('a').click(function(){
+                    $('html, body').animate({
+                        scrollTop: $( $(this).attr('href') ).offset().top
+                    }, 500);
+                    return false;
+                });
+                });
+            </script>
+           <!-- Shrinking Nav On Scroll -->
+            <script type="text/javascript">
+           
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){  
+                $('aside').addClass("revise");
+         
+            }
+            else{
+                $('aside').removeClass("revise");
+               
+            }
+
+        });
+            </script>
 </head>
 
 <body>
+    <a href="tel:1-619-602-3376"><aside></aside></a>
     <nav>
     <ul>
-        <li><img></li>
-        <li>Lessons</li>
-        <li>Reviews</li>
-        <li>Tuition</li>
-        <li>Contact</li>
+       <li><a href="#home"><img id="logo" src="images/mainlogo.jpg"></a></li>
+    <li><a href="#lessons"><li>Lessons</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li> <a href="#tuition">Tuition</a></li>
+    <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-<header>
-    <div><!--Header Image-->
-    
+   <div id="main-wrapper"><!--main-wrapper-->
+<header id="home">
+    <div class="hide"><!--Header Image-->
+    <h1>Welcome to StudioV</h1>
+        <p>Washington D.C.</p>
+        <div>Learn About the Studio</div>
 </div><!--Header Image-->
     </header>
+           <div id="text-wrapper"> <!--text wrapper-->
     <article>
-    <h2>Welcome To StudioV</h2>
-        <p>Welcome to Studio V.  We welcome  prospective students of all backgrounds and aptitudes seeking piano, composition, and musicological lessons in the Washington Metropolitan Area.  Whether a professional musician, intermeditate, or a beginner, the Studio welcomes you.</p>
+    <h2>Welcome to StudioV</h2>
+        <p>We welcome  prospective students of all backgrounds and aptitudes seeking piano, composition, and musicological lessons in the Washington Metropolitan Area.  Whether a <a href="#advanced">professional musician</a>, <a href="#intermediate">intermeditate</a>, or a <a href="#beginner">beginner</a>, the Studio welcomes you.</p>
         <h3>StudioV</h3>
         <p>Studio V, the private musical studio of Matthew J Viator, has been cited as one of the top musical studios in the Washington Metropolitan Area by various sources, such as  Washingtonian Magazine and the US Commerce Association.  Students, current and former, have included lauded recording artists, music teachers, producers, DJ's, conservatory students, and various enthusiasts of a diverse background. The Studio utilizes the European Classical tradition of building a holistic and supportive musical community of learners.  </p>
-        <h4>Monthly Socials</h4>
+        <h3>Monthly Socials</h3>
         <p>Studio V, the private musical studio of Matthew J Viator, has been cited as one of the top musical studios in the Washington Metropolitan Area by various sources, such as  Washingtonian Magazine and the US Commerce Association.  Students, current and former, have included lauded recording artists, music teachers, producers, DJ's, conservatory students, and various enthusiasts of a diverse background. The Studio utilizes the European Classical tradition of building a holistic and supportive musical community of learners.  </p>
-        <h3>Studio Teacher: Matthew Viator</h3>
+        <h3>Teacher: Matthew Viator</h3>
+        <div id="matthewimage"><img src="images/matthewimage.jpg"></div>
         <p>Matthew J Viator is a graduate of the Peabody Conservatory of Music.  Mr. Viator's teachers include Christopher Theofanidis, Libby Larson, the late Nicholas Maw, Shafer Mahoney, Nancy Roldan, Cory McVicar, Gigi Reeks, and David Smooke.  While in Conservatory, his works received premieres at the Peabody Opera Theater, the Peabody Conservatory, Isaac Stern Hall (Carnegie Hall), Steinway Hall, First Unitarian Church, Mount Vernon United Methodist Church, with commissions from NASA, the Sons of Confederate Veterans, and various musicians and generous private patrons of the arts.  Mr. Viator is the composer of a wide array of works, notably Chamber and solo works, including an operetta, Efstathios, several Piano Sonatas and Klavierstucke, String Quartets, Sacred Choral Works, Piano Concerti, a Violin Concerto, a Viola Quartet, and numerous etudes for the instruction of piano technique.  Mr. Viator has been a guest Lecturer at the Shenandoah Conservatory and the Peabody Conservatory on Musical Composition, Chamber Coach to graduate string students at the Peabody Conservatory, and a guest Lecturer with the Interfaith Institute of America on the Ethics of Art and the Wagnerian concept of the Artist as Priest.  Mr. Viator has been recognized by the Peabody Conservatory as a Distinguished Alumni in 2013, participating in a panel discussion at the Conservatory for matriculating musicians with alumni from across the US.  Mr. Viator is the author of various books, including the textbook Approaching the Piano (2010), an integrated pianistic / theoretical curriculum at the Piano.</p>
     </article>
-    <article>
+    <article id="lessons"> <!--Lesson Article-->
         <h2>Lessons</h2>
         <p>Not all students will be a Liszt or a Horowitz, but this is not the value of learning a musical instrument.  The Piano offers a fun, engaging outlet for individuals of every walk of life. Musicians are cited again and again as statistically more healthy, more intelligent and mentally fit, more calm, and generally enjoy a higher quality of life.  Whether you are an aspiring professional musician or an avid enthusiast and music lover, learning the piano or to compose is a rewarding pursuit which pays dividends throughout life.
 
 To learn to compose is to give yourself the ability to express your thoughts, your feelings, and your understanding of "... the way it feels to live life today, right now," to quote Aaron Copland.
 </p>
         <section>
-        <h4>Beginner</h4>
+        <h4 id="beginner">Beginner</h4>
         <p>Beginning students have no formal musical training; musical training in a different instrument; from a distant time ago; or generally do not have the current skills to warrant higher enrollment.  Beginning students are guided through proficiency exercises and approaches, learning sustainable and holistic approaches to the reading, comprehension, preparation, and preparation of music.</p>
-        <div>Check Out Pricing</div>
+       <a href="#beginnertuition"><div class="pricing">See Pricing</div></a>
             </sect
             <section>
-        <h4>Intermediate</h4>
+        <h4 id="intermediate">Intermediate</h4>
         <p>Intermediate students are able to approach and perform literature, and are primarily engaged in technical refinement, with considerable focus on hand posture, hand execution, strength and flexibility, finger independence, as well as more nuanced musical skills derived from dynamics, articulations, embellishments, phrasing, pedaling, and attack. Theoretical exercises seek to reinforce technical skills and abilities, and are used primarily to accelerate technical proficiencies and comprehension.</p>
-        <div>Check Out Pricing</div>
+            <a href="#intermediatetuition"> <div class="pricing">See Pricing</div></a>
             </section>
         <section>
-        <h4>Advanced</h4>
+        <h4 id="advanced">Advanced</h4>
         <p>Advanced students are fully competent students, technically sophisticated and musically cultured.  Studies focus primarily on the crafting of unique interpretations, nuanced understandings, and polished performances.  Theoretical exercises dig into deeper, nuanced understandings of musical composition and performance approaches, history, musicological analysis, and aural skills of an advanced aptitude.  Musical abstraction, large scale control and execution, and sophisticated technical approaches should be within reach and discernible.</p>
-        <div>Check Out Pricing</div>
+            <a href="#advancedtuition">  <div class="pricing">See Pricing</div></a>
             </section>
         <h3>What Style Will I Learn?</h3>
         <p>The Studio gives a Western Classical Education to its students.  Many popular, jazz, rock, hip hop, and electronic musicians have actively sought out the studio primarily to provide them with a rigorous Classical approach that can assist in giving them foundational knowledge and understandings about their musical approach and direction.  Enthusiasts and amateurs of all ages enjoy the freedom that a Classical education provides to them, giving them a sustainable, problem-solving-based approach which allows them to feel in control of their relationship with music and musical performance.</p>
     </article>
-    <article>
+    <article id="reviews">
     <h2>Reviews</h2>
         <section>
-        <img>
-            <p> "I've been Matthew's student for about a year and a half, and he's amazing. He knows his stuff (he plays and composes brilliantly), and does a fantastic job of figuring out how and when to tell you what you need to know to take the next step. He's never overwhelming or too slow. He'll get you to your goals, wherever you're starting from.  I had a bit of piano when I was really little, and some other musical background, but couldn't play to save my life. Matthew went my speed, kept me motivated, pushed me when I needed pushing but understood when life got in the way. He's also incredibly sweet, and loves to loop students in to his monthly piano salons. He charges reasonable rates, and instills a real love of the piano. He makes an intimidating world of music accessible. I couldn't recommend him highly enough!" -Selena Simmons-Duffin, Intermediate Student </p>
+  <div class="reviewimg"> </div>
+            <blockquote> "I've been Matthew's student for about a year and a half, and he's amazing. He knows his stuff (he plays and composes brilliantly), and does a fantastic job of figuring out how and when to tell you what you need to know to take the next step. He's never overwhelming or too slow. He'll get you to your goals, wherever you're starting from.  I had a bit of piano when I was really little, and some other musical background, but couldn't play to save my life. Matthew went my speed, kept me motivated, pushed me when I needed pushing but understood when life got in the way. He's also incredibly sweet, and loves to loop students in to his monthly piano salons. He charges reasonable rates, and instills a real love of the piano. He makes an intimidating world of music accessible. I couldn't recommend him highly enough!" -Selena Simmons-Duffin, Intermediate Student </blockquote>
         </section>
         <section>
-        <img>
-            <p>"Matthew is an incredibly talented piano teacher! His lessons are engaging, from start to finish, and he has a way of motivating students to understand all aspects of the instrument, including technical skill, theory, and composition. This comprehensive approach was presented in an easy-to-understand manner, at just the right pace for my schedule and ability level.   Overall, Matthew has instilled in me a love of musical learning and appreciation for the instrument. I look forward to our lessons all week and cannot recommend him highly enough." -John Karalis, Intermediate Student</p>
+        <div class="reviewimg"> </div>
+            <blockquote>"Matthew is an incredibly talented piano teacher! His lessons are engaging, from start to finish, and he has a way of motivating students to understand all aspects of the instrument, including technical skill, theory, and composition. This comprehensive approach was presented in an easy-to-understand manner, at just the right pace for my schedule and ability level.   Overall, Matthew has instilled in me a love of musical learning and appreciation for the instrument. I look forward to our lessons all week and cannot recommend him highly enough." -John Karalis, Intermediate Student</blockquote>
         </section>
         <section>
-        <img>
-            <p>"I've been one of Matthew's students for a year. He is conservatory trained and certainly knows his way around a piano. His is also very interested in the history of the piano, the lives of composers, and tries to bring this information to each lesson.  He is also very good a accommodating students who don't have a lot of time to practice; which, as a working adult, I appreciate." -Adam Mills-Campisi, Intermediate Student</p>
+        <div class="reviewimg"> </div>
+            <blockquote>"I've been one of Matthew's students for a year. He is conservatory trained and certainly knows his way around a piano. His is also very interested in the history of the piano, the lives of composers, and tries to bring this information to each lesson.  He is also very good a accommodating students who don't have a lot of time to practice; which, as a working adult, I appreciate." -Adam Mills-Campisi, Intermediate Student</blockquote>
         </section>
     </article>
-    <article>
+    <article id="tuition">
     <h2>Tuition</h2>
-        <section>
+        <section id="beginnertuition">
         <h4>Proficient Students</h4>
-            <div>200/month</div>
-            <ul>
+            <div class="monthlyprice">&#36;200/month</div>
+            <ul class="center">
             <li>Beginner Piano</li>
             <li>Beginner Voice</li>
             <li>Elements of Composition</li>
             </ul>
-            <div>Learn more - Email Studio</div>
+            <div class="emailinquiry">Learn more - Email Studio</div>
         </section>
-        <section>
+        <section id="intermediatetuition">
         <h4>Technical Studies</h4>
-            <div>300/month</div>
-            <ul>
+           <div class="monthlyprice">&#36;200/month</div>
+            <ul class="center">
             <li>Early to late Piano</li>
             <li>Master Voice</li>
             <li>Mastery of Composition</li>
             </ul>
-              <div>Learn more - Email Studio</div>
+               <div class="emailinquiry">Learn more - Email Studio</div>
         </section>
-          <section>
+          <section id="advancedtuition">
         <h4>Professional Studies</h4>
-            <div>350/month</div>
-            <ul>
+           <div class="monthlyprice">&#36;200/month</div>
+            <ul class="center">
             <li>Advanced Students</li>
             <li>Advanced Voice Voice</li>
             <li>Mastery of Composition</li>
             </ul>
-                <div>Learn more - Email Studio</div>
+                 <div class="emailinquiry">Learn more - Email Studio</div>
         </section>
         <h3>Currently a Student? Pay Tuition Below</h3>
             <div>Proficeitn Studies Pay Here</div>
               <div>Technical Studies - Pay Here</div>
             <div>Technical Studies - Pay Here</div>
     </article>
-    <article>
+    <article id="contact">
     <h2>Contact Studio</h2>
     <p>Call</p>
     <p>Email</p>
         <p>Facebook</p>
     </article>
+    </div> <!--text wrapper-->
+    </div> <!--main-wrapper-->
 </body>
 </html>
