@@ -2,12 +2,10 @@
  box-sizing: border-box;
 }
 
-@font-face {
-    font-family: "Gainsborough";
-src: url("../images/gainsborough.ttf")
+
+.none {
+ display: none;   
 }
-
-
 
 img {
  width: 100%;   
@@ -21,7 +19,7 @@ nav {
 }
 
 nav ul {
-    max-width: 290px;;
+    max-width: 200px;
     margin: 0 auto;
 }
 
@@ -29,7 +27,7 @@ nav ul li {
  display: block;
   text-align: center;
     padding: 15px;
-    font-size: 1.4em;
+    font-size: 1.2em;
 /*    background-color: black;*/
     color: orange;
    
@@ -41,7 +39,7 @@ a {
 
 li a {
  color: white;   
-    font-style:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 nav ul li:first-child {
@@ -56,18 +54,15 @@ nav ul li:first-child {
  width: 100%;   
 }
 
-.hide {
-display: none;
-    
-}
+
 
 #text-wrapper {
-width: 80vw;
+width: 94%;
 margin: 0 auto;   
     font-size: 1.1em;
     line-height: 1.3em;
-    max-width: 90vw;
-    font-style:'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+/*    max-width: 90vw;*/
+    font-family: 'Open Sans', sans-serif;
 }
 #text-wrapper p {
  -webkit-margin-before: 1.5em;
@@ -93,58 +88,64 @@ aside.revise {
     height: 12vh;
     text-align: center;
     font-size: 1.5em;
-    padding: 8px;
-    background: url(../images/phone.svg);
-    background-color: #d64d2b;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-bottom-left-radius: 20%;
+padding: 8px;
+background: url(../images/phone.svg);
+background-color: #d64d2b;
+background-repeat: no-repeat;
+background-position: center;
+border-bottom-left-radius: 20%;
 }
 
+
 h2, h3, h4 {
- text-align: center; 
-    font-family: 'Gainsborough';
-    letter-spacing: .08em;
-    color: #d64d2b;
-     -webkit-margin-before: 1.4em;
+text-align: center; 
+font-family: 'Montserrat', sans-serif;
+color: #d64d2b;
+-webkit-margin-before: 1.4em;
 -webkit-margin-after: 1.2em;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px; 
 }
 
+
 h2 {
- font-size: 1.65em;      
+font-size: 1.65em;      
 }
 
+
 h3 {
- font-size: 1.3em;   
+font-size: 1.3em;   
 }
+
 h4 {
- font-size: 1.2em;   
+font-size: 1.2em;   
 }
+
 
 
 #matthewimage {
- max-width: 290px;
-    margin: 0 auto;
+max-width: 260px;
+margin: 0 auto;
 }
+
 
 #matthewimage img {
- border-radius: 5%;    
+border-radius: 5%;    
 }
 
-.pricing {
- width: 110px;
-    height: 35px;
-   color: #d64d2b;
-    text-align: center;
-    margin: 0 auto;
-    padding:3.5px;
-    margin-top: -18px;
-    font-size: .9em;
-    border-color: #d64d2b;
-    border-style: solid;
-    border-width: 3px;
+#pricing {
+display: inline-block;
+width: 110px;
+height: 35px;
+color: #d64d2b;
+text-align: center;
+margin: 0 auto;
+padding: 3.5px;
+margin-top: -18px;
+font-size: .9em;
+border-color: #d64d2b;
+border-style: solid;
+border-width: 3px;
 }
 
 .reviewimg {
@@ -156,120 +157,447 @@ h4 {
 }
 
 blockquote {
- font-size: .85em;
-    line-height: 1.5em;
-    font-style: italic;
+
+font-size: .85em;
+line-height: 1.5em;
+font-style: italic;
     
 }
 
 .monthlyprice {
-  width: 110px;
-    height: 110px;
-    border-radius: 100%;
-    background-color: black;
-    margin: 0 auto;  
-    text-align: center;
+
+width: 110px;
+height: 110px;
+border-radius: 100%;
+background-color: black;
+margin: 0 auto;  
+text-align: center;
 vertical-align: middle;
 line-height: 110px;
-    color: white;
-      font-family: "Gainsborough";
+color: white;
+ font-family: 'Montserrat', sans-serif;
 }
 
-ul.center {
-
-list-style: square inside none;
-font-size: .9em;
-margin: 0 auto;
- text-align:left; 
-    margin-top: 20px; 
-    width: 200px;
-}
-
-ul.center li {
- padding-left: 5px;   
-}
 
 .emailinquiry {
-    width: 200px;
-    height: 35px;
-   color: #d64d2b;
-    text-align: center;
+
+width: 150px;
+height: 35px;
+color: #d64d2b;
+text-align: center;
+margin: 0 auto;
+padding:3.5px;
+font-size: .9em;
+border-color: #d64d2b;
+border-style: solid;
+border-width: 2px;  
+margin-top: 15px;
+}
+
+.iconcontact { 
+width: 80px;
+height: 80px;
+margin: 30px auto;     
+}
+
+#phoneiconcontact { 
+width: 80px;
+height: 80px;
+}
+
+#phoneiconcontact { 
+width: 80px;
+height: 80px;
     margin: 0 auto;
-    padding:3.5px;
-    font-size: .9em;
-    border-color: #d64d2b;
-    border-style: solid;
-    border-width: 2px;  
-    margin-top: 15px;
+}
+
+#contact h4 {
+ color: black;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.main-footer {
+text-align: center;
+font-size: .7rem;
+box-shadow: 0px 0px 5px #d64d2b; 
+-webkit-box-shadow: 0px 0px 5px #d64d2b; 
+-moz-box-shadow: 0px 0px 5px #d64d2b;
+padding: 6px;
+background-color: #FCFCFC;
+color: black;
+display: block;
+width: 70%;
+margin: 0 auto;
+border-top-right-radius: 25%;
+border-top-left-radius: 25%;
+}
+
+iframe {
+ margin: 0 auto;   
+  width:  100%  
+}
+ 
+.mapicon { 
+width: 40px;
+height: 40px; 
+margin: 0 auto;
+}
+
+#home, #contact h4 {
+display: none;      
+}
+
+pricing {
+ display: none;  
+}
+
+
+
+
+@media only screen and (min-width: 690px) {
+    
+#teachercontainer, #pricingcolumn {
+display: -webkit-flex;
+display: flex;
+width: 100%;
+    }
+    
+
+    
+#matthewimage {
+max-width: 40%;
+padding-top: 25px;
+margin-right: 20px;
+    }
+    
+#teacherinfo {
+width: 60%;
+    }
+    
+#beginnertuition, #intermediatetuition, #advancedtuition {
+width: 33.3333333%; 
+    }
+
+#opening h2 {           
+font-size: 1em;
+text-decoration: none;
+}
+    
+    #contact h4 {
+ color: black;
+    font-size: 1.3em;
+        display: inherit;
+}
 }
 
 
 
 @media only screen and (min-width: 790px) {
- 
-    nav {
-width: 16vw;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-     background-color: #FFF8F5; 
+    
+    
+#text-wrapper p {  
+font-size: 1.3em;
+line-height: 1.4em;   
+ }
+    
+nav {
+width: 10vw;
+height: 100vh;
+position: fixed;
+display: flex;
+background: url(../images/pianoimage2.jpg) no-repeat center center fixed;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover; 
+color: white; 
+-webkit-transition: all .5s ease-in-out;
+-moz-transition: all .5s ease-in-out;
+-o-transition: all .5s ease-in-out;
+transition: all .5s ease-in-out;
 } 
     
-    nav ul {
-    max-width: 100%;
-    margin: 0 auto;
+        #contact h4 {
+ color: black;
+    font-size: 1.5em;
+            margin-top: 14px;
 }
     
-    #home {
-      background: url(../images/pianofree.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
-    max-width: 100%;
-    height: 100vh;  
-    }
- #main-wrapper {
-    width: 84vw;
-    display: flex;
-    margin-left: auto;
-     background: url(../images/pianoimage.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
-    max-width: 100%;
-    height: auto;
+  
+article {
+background-color: white;
+padding: 20px 50px 60px 50px;
+margin: 150px auto;
+border-radius: 10px;
+color: black;
+max-width: 1100px;
+}
+    
+.opacity {
+opacity: .9;   
+}
+    
+nav ul {
+max-width: 100%;
+margin: 0 auto;
+}
+    
+#home {
+max-width: 100%;
+height: 100vh; 
+position: relative;
+display: inherit;
+opacity: none;
+}
+    
+#main-wrapper {
+
+width: 90vw;
+display: flex;
+margin-left: auto;
+background: url(../images/pianoimage2.jpg) no-repeat center center fixed;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+max-width: 100%;
+height: auto;
 }
 
 #text-wrapper {
-    width: 70%;
-    margin: 0 auto;
+width: 70%;
+margin: 0 auto;
 }
 
 body {
 display: -webkit-flex;
-  display: flex;
-    width: 100%;
-    color: white;
+display: flex;
+width: 100%;
+color: white;
 
 }   
-  #main-wrapper {
- display: block;   
-  }
-nav ul {
- display: block;
-    margin: 0 auto;
-    background-color: #F1F1F1; 
+
+#main-wrapper {
+display: block;   
 }
-    nav ul li a {
-     color: black;   
-    }
+
+#matthewimage {
+max-width: 35%;
+}
     
-    aside.revise {
-        display: none;
-    }
+#teacherinfo {
+width: 65%;
+}
+
+nav ul {
+display: block;
+margin: 0 auto;
+
+}
+
+nav ul li a {
+color: white; 
+-webkit-transition: all 3s ease-in-out;
+-moz-transition: all 3s ease-in-out;
+-o-transition: all 3s ease-in-out;
+transition: all 3s ease-in-out;
+}
+    
+    
+    
+aside.revise {
+display: none;
+}
+    
+#second {
+order: 2;      
+}
+    
+#third {
+order: 2;      
+}
+    
+    /* Shrink */
+    
+a.hvr-shrink {
+    
+display: flex;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+margin: 0 auto;
+}
+    
+a.hvr-shrink:hover, a.hvr-shrink:focus, a.hvr-shrink:active {
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+}
+    
+.contactrow {
+display: -webkit-flex;
+display: flex;
+width: 70%; 
+    margin: 0 auto;
+}
+    
+a.contacticon {
+width: 33.3333333%;  
+}
+    
+
+    
+.iconcontact { 
+width: 90px;
+height: 90px;
+}
+    
+#phoneiconcontact { 
+width: 40px;
+height: 40px;
+    margin: 0 auto;
+}
+    
+#opening h2 {           
+font-size: 2.4em;
+text-decoration: none;
+}
+
+#opening {
+    
+background-color: transparent;
+margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+height: 500px;
+    
+}
+    
+#statement {
         
+width: 95%;
+margin: 0 auto;
+color: white;
+}
     
+#statement h2 {
+        
+color: white;
+-webkit-margin-before: 2em;
+-webkit-margin-after: .4em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px; 
+font-family: 'Montserrat', sans-serif;
+        
+}
+
+#opening p {
+text-align: center;
+font-size: 1em;
+line-height: 1.2em;
+font-family: 'Montserrat', sans-serif;
+margin: 0 auto;
+font-weight: bolder;
+color: #d64d2b;
+/*
+         background-color: #d64d2b;
+         border-radius: 5px;
+*/
+     }
+    
+    
+#learn {
+width: 175px;
+height: 45px;
+padding: 12px;
+text-align: center;
+background-color: grey;
+font-size: 1.2em;
+margin: 70px auto 20px auto;
+color: white;
+opacity: .85;
+}
+    
+    
+}
+
+@media only screen and (min-width: 990px) {
+    
+#lessoncolumn, .reviewcolumn {
+display: -webkit-flex;
+display: flex;
+width: 100%;
+}
+    
+.reviewcolumn {
+ 
+margin: 70px auto 80px auto;
+    
+}
+    
+/*
+.lessondescription {
+width: 33.3333333%; 
+padding: 0 20px;
+}
+*/
+
+.review1 {
+width: 25%;
+    
+}
+    
+    .review2 {
+width: 75%;
+    
+}
+    
+#opening h2 {           
+font-size:2.5em;
+}
+
+#opening p {
+ font-size: 1.1em;   
+}
+    
+}
+
+@media only screen and (min-width: 1100px) {
+    
+  #opening h2 {           
+font-size: 3em;
+} 
+    
+}
+
+@media only screen and (min-width: 1350px) {
+    
+#opening h2 {           
+font-size: 3.7em;
+} 
+        
+#opening p {
+ font-size: 1.2em;   
+}
+
+}
+        
+@media only screen and (min-width: 1550px) {
+    
+#opening h2 {           
+font-size: 4.3em;
+    }
+#opening p {
+ font-size: 1.35em;   
+}             
+     
     
 }
