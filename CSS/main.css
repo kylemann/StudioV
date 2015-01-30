@@ -99,7 +99,8 @@ border-bottom-left-radius: 20%;
 
 h2, h3, h4 {
 text-align: center; 
-font-family: 'Montserrat', sans-serif;
+/*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Lato', sans-serif;
 color: #d64d2b;
 -webkit-margin-before: 1.4em;
 -webkit-margin-after: 1.2em;
@@ -229,8 +230,8 @@ color: black;
 display: block;
 width: 70%;
 margin: 0 auto;
-border-top-right-radius: 25%;
-border-top-left-radius: 25%;
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
 }
 
 iframe {
@@ -282,6 +283,7 @@ width: 33.3333333%;
 #opening h2 {           
 font-size: 1em;
 text-decoration: none;
+    font-family: 'Lato', sans-serif;
 }
     
     #contact h4 {
@@ -296,17 +298,124 @@ text-decoration: none;
 @media only screen and (min-width: 790px) {
     
     
+   #tech-slideshow {
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+    #tech-slideshow > div {
+        height: 300px;
+        width: 2526px;
+        background: url(../images/longphoto3.jpg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        
+        -moz-transition:  opacity 0.5s ease-out; 
+           -o-transition: opacity 0.5s ease-out; 
+      -webkit-transition: opacity 0.5s ease-out; 
+          -ms-transition: opacity 0.5s ease-out; 
+    
+        /* Slow */
+        -webkit-animation: moveSlideshow 60s linear infinite;
+        -moz-animation:    moveSlideshow 60s linear infinite;
+        
+        -webkit-transform: translate3d(0,0,0); /* Performance */
+    
+    }
+    #tech-slideshow #tech-slideshow-1 {
+        /* Sprite */
+        background-position: 0 300px;
+        
+        /* Fast */
+        -webkit-animation: moveSlideshow 20s linear infinite;
+        -moz-animation:    moveSlideshow 20s linear infinite;
+    }
+    #tech-slideshow:hover #tech-slideshow-2 {
+        opacity: 0;
+    }
+    
+    @-webkit-keyframes moveSlideshow {
+        0%   { 
+            -webkit-transform: translateX(0); 
+            -moz-transform:    translateX(0); 
+            -ms-transform:     translateX(0); 
+            -o-transform:      translateX(0); 
+            transform:         translateX(0); 
+        }    
+        100% { 
+            -webkit-transform: translateX(-1684px); 
+            -moz-transform:    translateX(-1684px); 
+            -ms-transform:     translateX(-1684px); 
+            -o-transform:      translateX(-1684px); 
+            transform:         translateX(-1684px); 
+        }
+    }
+    @-moz-keyframes moveSlideshow {
+        0%   { 
+            -webkit-transform: translateX(0); 
+            -moz-transform:    translateX(0); 
+            -ms-transform:     translateX(0); 
+            -o-transform:      translateX(0); 
+            transform:         translateX(0); 
+        }    
+        100% { 
+            -webkit-transform: translateX(-1684px); 
+            -moz-transform:    translateX(-1684px); 
+            -ms-transform:     translateX(-1684px); 
+            -o-transform:      translateX(-1684px); 
+            transform:         translateX(-1684px); 
+        }
+    }
+    
+    #page-wrap { 
+  width: 100%;
+  max-width: 842px; 
+  background: white;
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#page-wrap:before, #page-wrap:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,100), rgba(255,255,255,0));
+}
+#page-wrap:before {
+  left: 0;
+}
+#page-wrap:after {
+  right: 0;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,100));
+}
+
+    
+    
 #text-wrapper p {  
-font-size: 1.3em;
-line-height: 1.4em;   
+font-size: 1.1em;
+line-height: 1.35em;   
  }
+    
+blockquote {
+
+font-size: 1em;
+line-height: 1.5em;
+font-style: italic;
+    
+}
     
 nav {
 width: 10vw;
 height: 100vh;
 position: fixed;
 display: flex;
-background: url(../images/pianoimage2.jpg) no-repeat center center fixed;
+background: url(../images/pianofree.jpg) no-repeat center center fixed;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -353,10 +462,10 @@ opacity: none;
     
 #main-wrapper {
 
-width: 90vw;
+width: 100vw;
 display: flex;
 margin-left: auto;
-background: url(../images/pianoimage2.jpg) no-repeat center center fixed;
+background: url(../images/pianofree.jpg) no-repeat center center fixed;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -366,10 +475,12 @@ height: auto;
 }
 
 #text-wrapper {
-width: 70%;
+width: 60%;
 margin: 0 auto;
+    max-width: 1000px;
 }
 
+/*
 body {
 display: -webkit-flex;
 display: flex;
@@ -377,6 +488,7 @@ width: 100%;
 color: white;
 
 }   
+*/
 
 #main-wrapper {
 display: block;   
@@ -469,6 +581,7 @@ height: 40px;
 #opening h2 {           
 font-size: 2.4em;
 text-decoration: none;
+    padding: 0;
 }
 
 #opening {
@@ -478,6 +591,7 @@ margin: auto;
 position: absolute;
 top: 0; left: 0; bottom: 0; right: 0;
 height: 500px;
+    max-width: 900px;
     
 }
     
@@ -521,7 +635,7 @@ padding: 12px;
 text-align: center;
 background-color: grey;
 font-size: 1.2em;
-margin: 70px auto 20px auto;
+margin: 70px auto 50px auto;
 color: white;
 opacity: .85;
 }
@@ -581,7 +695,7 @@ font-size: 3em;
 @media only screen and (min-width: 1350px) {
     
 #opening h2 {           
-font-size: 3.7em;
+font-size: 3.8em;
 } 
         
 #opening p {
@@ -593,10 +707,10 @@ font-size: 3.7em;
 @media only screen and (min-width: 1550px) {
     
 #opening h2 {           
-font-size: 4.3em;
+font-size: 4em;
     }
 #opening p {
- font-size: 1.35em;   
+ font-size: 1.3em;   
 }             
      
     
