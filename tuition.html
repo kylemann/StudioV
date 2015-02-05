@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+          <meta name="keywords" content="Piano, Lessons, Pianos Lessons, Washington Piano, Beginner Lessons, Washington, D.C>">
+          <meta name="author" content="Kyle Mann">
+      <title>Studio V, Piano Lessons and Studio | Wasington D.C.</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Playfair+Display|PT+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/main.css">
+     <!-- Smooth Page scroll -->
+              <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.js"></script>
+              <script type="text/javascript">
+                $(window).load(function(){
+                $('a').click(function(){
+                    $('html, body').animate({
+                        scrollTop: $( $(this).attr('href') ).offset().top
+                    }, 500);
+                    return false;
+                });
+                });
+            </script>
+          <!-- Shrinking Nav On Scroll -->
+            <script type="text/javascript">
+           
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){  
+                $('nav').addClass("sticky");
+         
+            }
+            else{
+                $('nav').removeClass("sticky");
+               
+            }
+
+        });
+            </script>
+           
+</head>
+
+<body>
+    
+    <nav>
+<a href="#home"><img id="logo" class="mobile-hide" src="images/mainlogo.jpg"></a>
+    <ul>
+<li class="desktop-hide"><a href="#home"><img id="logo" src="images/mainlogo.jpg"></a></li>
+    <li><a href="#lessons">Lessons</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li id="fix"> <a href="#tuition">Tuition</a></li>
+    <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="main-wrapper"><!--main-wrapper-->
+       <div id="text-wrapper"> <!--text-wrapper-->
+<header id="home">
+    <article id="opening">
+        <div id="statement">
+    <h2>Welcome to StudioV</h2>
+        <p>Piano, Composition, <span>and</span> Musicological Studio | Washington D.C</p>
+        </div> <!--#statement ID-->
+        <a href="#about" class="hvr-shrink" id="learn"> Learn More</a>
+       </article>
+    </header>
+        <br class="desktop-hide">
+        <br class="desktop-hide">
+        <br class="desktop-hide">
+           <br class="desktop-hide">
+ <article id="tuition" class="opacity"> 
+    <h2>Tuition</h2>
+             <div id="pricingcolumn">
+        <section id="beginnertuition">
+        <h4>Beginer</h4>
+            <div class="monthlyprice">&#36;120/month</div>
+        
+        </section>
+        <section id="intermediatetuition">
+        <h4>Intermediate</h4>
+           <div class="monthlyprice">&#36;140/mo</div>
+       
+        </section>
+          <section id="advancedtuition">
+        <h4>Advanced</h4>
+           <div class="monthlyprice">&#36;160/mo</div>
+            
+                   </div> <!--pricing column-->
+    </article>
+
+   </div> <!--text wrapper-->
+       <footer class="main-footer">StudioV, Matthew Viator&copy; 2014, Washington D.C. | <a href="http://kyle-mann.com/">Website by Kyle Mann</a></footer>
+    </div> <!--main-wrapper-->
+</body>
+</html>
