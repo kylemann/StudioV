@@ -52,3 +52,8 @@ nav ul li:first-child {
 #logo {
  border-radius: 10%   
 }
+
+
+Coustard, 2 Styles by Vernon Adams
+Normal 400 
+Welcome to Studio V
