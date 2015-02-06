@@ -1,6 +1,6 @@
 * {
  box-sizing: border-box;
-
+/*border: 2px solid red;*/
 }
 
 /**************************************************
@@ -11,41 +11,43 @@ Navigation Bar Styling
 
 nav {
  background-color: black; 
-    display: block;
+    display: inline-block;
     position: fixed;
     width: 100%;
     height: 77px;
     z-index: 105;
 }
 
-nav ul {
-margin: 0 auto;
-    width: 300px;
-   height 82px;
-}
 
 nav ul li {
- display: inline-block;
-    font-size: .75em;
-    padding: 4px;
-/*    border: 2px solid white;*/
-    flex-flow: row;
+display: inline-block;
+font-size: .75em;
+padding: 5px;
 vertical-align: middle;
-    margin: 0 auto;
-    
 }
 
-nav ul li:first-child  {
-    border: none;
-    margin-right: 4px;
-    padding: 
-}
 
 li a {
- color: white;   
+color: white;   
 font-family: 'PT Sans', sans-serif;
 }
 
+#logo {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+
+
+
+
+/**************************************************
+***************************************************
+Main wrapper styling
+***************************************************
+**************************************************/
 
 .none {
  display: none;   
@@ -60,23 +62,21 @@ a {
  text-decoration: none; 
 }
 
-
-#logo {
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
- 
+.cover {
+display: none;  
 }
 
 
+
+/*
 
 #main-wrapper {
  width: 100vw;
 }
+*/
 
 
 #text-wrapper {
-margin: 0 auto;   
     font-size: 1.1em;
     line-height: 1.3em;
 font-family: 'PT Sans', sans-serif;
@@ -92,10 +92,6 @@ width: 90%;
 margin: 0 auto;
 }
 
-picture.remove {
- display: none;   
-    
-}
 
 
 h2, h3, h4 {
@@ -122,13 +118,183 @@ h4 {
 font-size: 1.2em;   
 }
 
+#contact h4 {
+ color: black;
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+.main-footer {
+text-align: center;
+font-size: .7rem;
+/*
+box-shadow: 0px 0px 5px #d64d2b; 
+-webkit-box-shadow: 0px 0px 5px #d64d2b; 
+-moz-box-shadow: 0px 0px 5px #d64d2b;
+*/
+padding: 2px;
+background-color: #FCFCFC;
+color: black;
+display: block;
+width: 100%;
+margin: 0 auto;
+}
+
+
+#home {
+display: none;      
+}
+
+
+
+article {
+ width: 90%;   
+    
+    
+}
+
+
+
+ .mobile-hide {
+  display: none;   
+     
+ }
+
+.center {
+    
+ text-align: center;   
+}
+
+blockquote {
+
+font-size: .85em;
+line-height: 1.5em;
+font-style: italic;
+    
+}
+
+article {
+ margin: 0 auto;   
+    
+}
+
+iframe {
+ width: 100%;
+}
+
+
+/**************************************************
+***************************************************
+Images and Icons
+***************************************************
+**************************************************/
 
 
 #matthewimage {
 max-width: 260px;
 height: 360px;
-margin: 0 auto -5px auto;
+    margin: 0 auto;
 }
+
+.iconcontact { 
+width: 40px;
+height: 40px;
+margin: 30px auto;     
+}
+
+#phoneiconcontact { 
+width: 40px;
+height: 40px;
+    margin: 0 auto;
+}
+
+.reviewimg {
+ width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: orange;
+    margin: 0 auto; 
+}
+
+#cover1 {
+background: url(../images/cover1.jpg)no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+}
+
+#cover2 {
+background: url(../images/cover2.jpg)no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+}
+
+#aboutpic {
+    
+display: -webkit-flex;
+display: flex;
+width: 100%;
+    height: 75vh;
+    padding: 0;
+    margin: 0;
+}
+
+#about1, #about2, #about3 {
+ width: 33.3333333vw;     
+}
+
+#about1 {
+    background: url(../images/about1black.jpg)no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+    
+}
+#about2 {
+    background: url(../images/about2.jpg)no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+    
+}
+
+#about3 {
+    background: url(../images/about3black.jpg)no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+    
+}
+
+
+
+/**************************************************
+***************************************************
+Pricing Page Layout Styling
+***************************************************
+**************************************************/
+
+
+.monthlyprice {
+
+width: 110px;
+height: 110px;
+border-radius: 100%;
+background-color: black;
+margin: 0 auto;  
+text-align: center;
+vertical-align: middle;
+line-height: 110px;
+color: white;
+font-family: 'PT Sans', sans-serif;
+}
+
 
 
 #pricing {
@@ -146,109 +312,12 @@ border-style: solid;
 border-width: 3px;
 }
 
-.reviewimg {
- width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    background-color: orange;
-    margin: 0 auto; 
-}
 
-blockquote {
-
-font-size: .85em;
-line-height: 1.5em;
-font-style: italic;
-    
-}
-
-.monthlyprice {
-
-width: 110px;
-height: 110px;
-border-radius: 100%;
-background-color: black;
-margin: 0 auto;  
-text-align: center;
-vertical-align: middle;
-line-height: 110px;
-color: white;
-font-family: 'PT Sans', sans-serif;
-}
-
-
-.emailinquiry {
-
-width: 150px;
-height: 35px;
-color: #d64d2b;
-text-align: center;
-margin: 0 auto;
-padding:3.5px;
-font-size: .9em;
-border-color: #d64d2b;
-border-style: solid;
-border-width: 2px;  
-margin-top: 15px;
-}
-
-.iconcontact { 
-width: 70px;
-height: 70px;
-margin: 30px auto;     
-}
-
-#phoneiconcontact { 
-width: 70px;
-height: 70px;
-}
-
-#phoneiconcontact { 
-width: 70px;
-height: 70px;
-    margin: 0 auto;
-}
-
-#contact h4 {
- color: black;
-    font-size: 1.1em;
-    margin-top: 10px;
-}
-
-.main-footer {
-text-align: center;
-font-size: .7rem;
-box-shadow: 0px 0px 5px #d64d2b; 
--webkit-box-shadow: 0px 0px 5px #d64d2b; 
--moz-box-shadow: 0px 0px 5px #d64d2b;
-padding: 6px;
-background-color: #FCFCFC;
-color: black;
-display: block;
-width: 100%;
-margin: 0 auto;
-}
-
-
-#home, #contact h4 {
-display: none;      
-}
-
-pricing {
- display: none;  
-}
-
-
-
- .mobile-hide {
-  display: none;   
-     
- }
-
-.center {
-    
- text-align: center;   
-}
+/**************************************************
+***************************************************
+Scrolling Image Slideshow
+***************************************************
+**************************************************/
 
 #tech-slideshow {
         height: 300px;
@@ -325,7 +394,7 @@ pricing {
   width: 90%;
   max-width: 842px; 
   background: white;
-  margin: 75px auto;
+  margin: 50px auto;
   position: relative;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
@@ -336,7 +405,7 @@ pricing {
   z-index: 1;
   top: 0;
   bottom: 0;
-  width: 50px;
+  width: 20px;
   background: -webkit-linear-gradient(left, rgba(255,255,255,100), rgba(255,255,255,0));
 }
 #page-wrap:before {
@@ -347,91 +416,12 @@ pricing {
   background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,100));
 }
 
-#cover {
- width: 100%;
-    height: 85vh;
-    background: url(../images/cover1black.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-margin: 0;
-    padding: 0;   
-}
 
-#cover:hover {
-    background: url(../images/cover1.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-}
-
-#aboutpic {
-    
-display: -webkit-flex;
-display: flex;
-width: 100%;
-    height: 75vh;
-    padding: 0;
-    margin: 0;
-}
-
-#about1, #about2, #about3 {
- width: 33.3333333vw;     
-}
-
-#about1 {
-    background: url(../images/about1black.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-#about2 {
-    background: url(../images/about2.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-
-#about3 {
-    background: url(../images/about3black.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-
-#about1:hover {
-    background: url(../images/about1.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-}
-
-#about2:hover {
-    background: url(../images/about2color.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-}
-
-#about3:hover {
-    background: url(../images/about3.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-}
-
-
+/**************************************************
+***************************************************
+MEDIA QUERY - Above 690 PX - TABLETS
+***************************************************
+**************************************************/
 
 @media only screen and (min-width: 690px) {
     
@@ -442,27 +432,6 @@ display: flex;
        width: 100vw; 
     }
     
-#teachercontainer {
-display: -webkit-flex;
-display: flex;
-width: 100vw;
-background-color: white;
-padding: 0;
-}
-
-#matthewimage {
-width: 33vw;
-max-width: 33vw;
-max-height: 100%;
-height: 100%;
-padding: 0;
-margin: 0;
-    }
-    
-#teacherinfo {
-width: 67vw;
-padding: 50px 80px 50px 80px;
-    }
     
 #beginnertuition, #intermediatetuition, #advancedtuition {
 width: 33.3333333%; 
@@ -476,11 +445,19 @@ font-family: 'Playfair Display', serif;
     
     #contact h4 {
  color: black;
-    font-size: 1.3em;
+    font-size: 1em;
         display: inherit;
 }
+
+
+
 }
 
+/**************************************************
+***************************************************
+MEDIA QUERY - Above 790 PX  DESKTOP
+***************************************************
+**************************************************/
 
 
 @media only screen and (min-width: 790px) {
@@ -491,63 +468,36 @@ Navigation Bar Styling
 ***************************************************
 **************************************************/
 
- 
-    
-#intro p {
- font-size: 2.5em;
-    line-height: 2.75em;
-    
-}
-    
- .desktop-hide {
-  display: none;   
-     
- }
-    
-    .mobile-hide {
-        
-     display: inherit;   
-    }
-
-    
-    
-#text-wrapper p {  
-font-size: 1.1em;
-line-height: 1.35em;
-width: 
- }
-    
-blockquote {
-
-font-size: .9em;
-line-height: 1.3em;
-font-style: italic;
-    
-}
-    
-nav {
-    display: -webkit-flex;
-    display: flex;
-    margin-top: 0;
+ nav {
+display: -webkit-flex;
+display: flex;
+margin-top: 0;
 height: 95px;
 -webkit-transition: all .5s ease-in-out;
 -moz-transition: all .5s ease-in-out;
 -o-transition: all .5s ease-in-out;
 transition: all .5s ease-in-out;
-    background: transparent;
+background: transparent;
+     clear: right;
 }
     
 nav ul {
-display: inline-block;
-   margin: auto 0 auto auto;
-    width: auto;
-    text-align: right;
+display: -webkit-flex;
+display: inline-flex;
+margin-left: auto;
 }
+    
 nav ul li {
-    display: inline-block;
-     font-size: 20px;   
+display: -webkit-flex;
+display: inline-flex;
+font-size: 1.1em;   
 padding: 15px;
+    align-self: center;
     }
+    
+nav ul li:first-child  {
+    margin-right: auto;
+}
 
 #logo {
     height: 85px;
@@ -556,7 +506,6 @@ margin-left: 15px;
     margin-top: 5px;
     display: inline-block;
     margin-right: auto;
-    
 }
     
 nav.sticky {
@@ -564,59 +513,6 @@ background-color: hsla(0, 0%, 0%, 0.62);
 background-image: none;
     }
     
-    
-    
-#contact h4 {
-color: black;
-font-size: 1.5em;
-margin-top: 14px;
-}
-    
-  
-article {
-background-color: #E8E8E8;
-padding: 50px 20px 50px 20px;
-/*margin: 0 auto;*/
-color: black;
-width: 100%;
-}
-
-.content {
-width: 70%;
-max-width: 800px;
-margin: 0 auto;
-align-content: center;
-    }
-    
-    
-    
-#home {
-width: 100%;
-height: 100vh; 
-position: relative;
-display: inherit;
-opacity: none;
-    background: url(../images/pianoimage2.jpg) no-repeat center center fixed;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-}
-    
-#main-wrapper {
-width: 100vw;
-/*
-background: url(../images/pianoimage2.jpg) no-repeat center center fixed;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-*/
-height: auto;
-}
-
-
-
 nav ul li a {
 color: white; 
 -webkit-transition: all 3s ease-in-out;
@@ -626,68 +522,154 @@ transition: all 3s ease-in-out;
 font-size: .7em;
 }
     
+    /**************************************************
+***************************************************
+Main-Wrapper Styling
+***************************************************
+**************************************************/
+     
+#intro p {
+ font-size: 2.5em;
+    line-height: 2.75em;
     
-    
-aside.revise {
-display: none;
 }
     
-#second {
-order: 2;      
-}
+.desktop-hide {
+  display: none;   
+     
+ }
     
-#third {
-order: 2;      
-}
+.mobile-hide {
+    display: inherit;   
+    }
+
+#text-wrapper p {  
+font-size: 1.1em;
+line-height: 1.35em;
+width:100%;
+ }
+
     
-    /* Shrink */
+blockquote {
+
+font-size: .9em;
+line-height: 1.3em;
+font-style: italic;
     
-a.hvr-shrink {
-    
-display: flex;
-vertical-align: middle;
--webkit-transform: translateZ(0);
-transform: translateZ(0);
-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
--moz-osx-font-smoothing: grayscale;
--webkit-transition-duration: 0.3s;
-transition-duration: 0.3s;
--webkit-transition-property: transform;
-transition-property: transform;
-margin: 0 auto;
-}
-    
-a.hvr-shrink:hover, a.hvr-shrink:focus, a.hvr-shrink:active {
--webkit-transform: scale(0.9);
-transform: scale(0.9);
-}
-    
-.contactrow {
-display: -webkit-flex;
-display: flex;
-width: 70%; 
-    margin: 0 auto;
-}
-    
-a.contacticon {
-width: 33.3333333%;  
 }
     
 
     
+.cover {
+display: inherit;
+margin: 0 auto;
+width: 100%;
+height: 85vh;
+    }
+
+#contact h4 {
+color: black;
+font-size: 1em;
+margin-top: 14px;
+}
+    
+article {
+background-color: white;
+padding: 50px 20px 50px 20px;
+color: grey;
+width: 100%;
+}
+    
+    article p {
+     color: grey;   
+        
+    }
+
+.content {
+width: 70%;
+max-width: 800px;
+margin: 0 auto;
+align-content: center;
+    }
+    
+#home {
+width: 100%;
+height: 100vh; 
+position: relative;
+display: inherit;
+opacity: none;
+background: url(../images/desktopphoto.jpg) no-repeat center center fixed;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+}
+    
+#iframe {
+/*margin: 0 auto;*/
+width: 90%;
+}
+
+      
 .iconcontact { 
-width: 70px;
-height: 70px;
+width: 60px;
+height: 60px;
 }
     
 #phoneiconcontact { 
-width: 30px;
-height: 30px;
+width: 60px;
+height: 60px;
     margin: 0 auto;
 }
+
     
+#teachercontainer, #contact {
+display: -webkit-flex;
+display: flex;
+width: 100%;
+background-color: #E8E8E8;
+padding: 0;
+}
+
+#contactsection, #contactsection2 {
+    width: 50%;   
+    }
+    
+    #contactsection2 {
+     padding: 60px 0 60px 0;   
+        
+    }
+
+
+#matthewimage {
+width: 35%;
+max-width: 35%;
+max-height: 100%;
+height: 100%;
+padding: 0;
+margin: 0 auto -6px auto;
+    }
+    
+#teacherinfo {
+width: 65%;
+padding: 50px 80px 50px 80px;
+    margin: 0;
+}
+    
+
+
+
+
+
+    
+    
+    /**************************************************
+***************************************************
+Landing Page Styling and Header
+***************************************************
+**************************************************/
+    
+        
 #opening h2 {           
 font-size: 2.4em;
 text-decoration: none;
@@ -702,6 +684,7 @@ top: 0; left: 0; bottom: 0; right: 0;
 height: 500px;
 }
     
+
     
 #statement {
         
@@ -729,10 +712,7 @@ font-family: 'PT Sans', sans-serif;
 margin: 0 auto;
 font-weight: bolder;
 color: #d64d2b;
-/*
-         background-color: #d64d2b;
-         border-radius: 5px;
-*/
+
      }
     
     
@@ -745,6 +725,53 @@ font-size: 1em;
 margin: 75px auto 0 auto;
 color: white;
 }
+    
+    
+/**************************************************
+***************************************************
+REVIEW PAGE STYLING
+***************************************************
+**************************************************/
+
+#second {
+order: 2;      
+}
+    
+#third {
+order: 2;      
+}
+    
+    /**************************************************
+***************************************************
+HOVER and ANIMATION FEATURES
+***************************************************
+**************************************************/
+    
+/* Shrink on HOVER */
+    
+a.hvr-shrink {
+    
+display: flex;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+margin: 0 auto;
+}
+    
+a.hvr-shrink:hover, a.hvr-shrink:focus, a.hvr-shrink:active {
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+}
+    
+
     
     
 }
