@@ -140,25 +140,20 @@ width: 100%;
 margin: 0 auto;
 }
 
-
 #home {
 display: none;      
 }
-
-
+.home2 {
+ display: none;   
+}
 
 article {
  width: 90%;   
-    
-    
 }
 
-
-
- .mobile-hide {
+.mobile-hide {
   display: none;   
-     
- }
+}
 
 .center {
     
@@ -216,21 +211,6 @@ height: 40px;
     margin: 0 auto; 
 }
 
-#cover1 {
-background: url(../images/cover1.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-}
-
-#cover2 {
-background: url(../images/cover2.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-}
 
 #aboutpic {
     
@@ -391,7 +371,7 @@ Scrolling Image Slideshow
     }
 
 #page-wrap { 
-  width: 90%;
+  width: 100%;
   max-width: 842px; 
   background: white;
   margin: 50px auto;
@@ -547,6 +527,10 @@ Main-Wrapper Styling
 font-size: 1.1em;
 line-height: 1.35em;
 width:100%;
+     -webkit-margin-before: 1.55em;
+-webkit-margin-after: 1.55em;
+-webkit-margin-start: 0;
+-webkit-margin-end: 0px;  
  }
 
     
@@ -558,6 +542,16 @@ font-style: italic;
     
 }
     
+.first::first-letter {
+    font-size: 400%;
+    color: #d64d2b;
+    float: left; 
+ line-height: 35px;
+ padding-top: 15px; 
+ padding-right: 10px;
+    font-family: Times, serif, Georgia;
+}
+    
 
     
 .cover {
@@ -565,7 +559,33 @@ display: inherit;
 margin: 0 auto;
 width: 100%;
 height: 85vh;
+padding: 0;
     }
+    
+    #cover3 {
+     background: url(../images/lessoncover.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+        
+    }
+    
+    #cover1 {
+background: url(../images/cover1.jpg)no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+}
+
+#cover2 {
+background: url(../images/cover2.jpg)no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+}
 
 #contact h4 {
 color: black;
@@ -576,14 +596,10 @@ margin-top: 14px;
 article {
 background-color: white;
 padding: 50px 20px 50px 20px;
-color: grey;
 width: 100%;
+    background-color: #E8E8E8;
 }
     
-    article p {
-     color: grey;   
-        
-    }
 
 .content {
 width: 70%;
@@ -612,32 +628,80 @@ width: 90%;
 
       
 .iconcontact { 
-width: 60px;
-height: 60px;
+width: 40px;
+height: 40px;
 }
     
 #phoneiconcontact { 
-width: 60px;
-height: 60px;
+width: 40px;
+height: 40px;
     margin: 0 auto;
 }
 
     
-#teachercontainer, #contact {
+#teachercontainer, #contact, #description, #lessons, #intro {
 display: -webkit-flex;
 display: flex;
 width: 100%;
 background-color: #E8E8E8;
 padding: 0;
 }
-
-#contactsection, #contactsection2 {
-    width: 50%;   
+    
+    #introbio {
+        width: 70%;
+        padding: 50px 80px 50px 80px;  
     }
     
-    #contactsection2 {
-     padding: 60px 0 60px 0;   
+    #intropic {
+         width: 30%;
+background: url(../images/about3.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;     
+    }
+    
+    #leveldescription {
+     width: 70%;
+        padding: 50px 80px 50px 80px;
         
+    }
+    
+    #lessoninfo {
+     width: 70%;
+        padding: 50px 80px 50px 80px;
+        
+    }
+    
+    #levelpic {
+    width: 30%;
+background: url(../images/levelpic.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+        
+    }
+    
+#lessonside {
+    width: 30%;
+background: url(../images/lessonside.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+        
+    }
+
+#contactsection, #contactsection2 {
+    width: 50%; 
+    }
+#contactsection {
+    padding: 40px 0 60px 0; 
+}
+    
+    #contactsection2 {
+        padding: 60px 0 60px 0;
     }
 
 
@@ -690,7 +754,9 @@ height: 500px;
         
 width: 100%;
 margin: 0 auto;
-color: #d64d2b;
+/*color: #d64d2b;*/
+
+
 }
     
 #statement h2 {
@@ -710,13 +776,15 @@ font-size: 1em;
 line-height: 1.2em;
 font-family: 'PT Sans', sans-serif;
 margin: 0 auto;
-font-weight: bolder;
+font-weight: bold;
 color: #d64d2b;
+
 
      }
     
     
 #learn {
+   display: -webkit-flex;
 width: 175px;
 height: 45px;
 padding: 10px 40px 10px 40px;
@@ -724,6 +792,58 @@ background-color: hsla(0, 0%, 0%, 0.62);
 font-size: 1em;
 margin: 75px auto 0 auto;
 color: white;
+}
+    
+ 
+    
+/**************************************************
+***************************************************
+Secondary Page Header styling
+***************************************************
+**************************************************/
+ 
+.home2 {
+width: 100%;
+height: 40vh; 
+position: relative;
+opacity: none;
+    display: inherit;
+
+}
+    
+#lessondesktop {
+    
+background: url(../images/lessondesktop.jpg) no-repeat center center fixed;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+    
+}
+    
+    #reviewdesktop {
+    
+background: url(../images/reviewdesktop.jpg) no-repeat center center fixed;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+    
+}
+    
+.opening1 {
+background-color: transparent;
+margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+height: 200px;
+    width: 100%;
+}
+    
+.opening1 h2 {           
+font-size: 3.5em;
+color: white;
+font-family: 'Playfair Display', serif;
 }
     
     
@@ -778,7 +898,7 @@ transform: scale(0.9);
 
 @media only screen and (min-width: 990px) {
     
-#lessoncolumn, .reviewcolumn {
+.reviewcolumn {
 display: -webkit-flex;
 display: flex;
 width: 100%;
@@ -790,12 +910,7 @@ margin: 70px auto 80px auto;
     
 }
     
-/*
-.lessondescription {
-width: 33.3333333%; 
-padding: 0 20px;
-}
-*/
+
 
 .review1 {
 width: 25%;
