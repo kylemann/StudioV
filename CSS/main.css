@@ -196,6 +196,17 @@ width: 40px;
 height: 40px;
 margin: 30px auto;     
 }
+.iconcontact1 {
+width: 40px;
+height: 40px;
+margin: 0 auto;    
+}
+
+#iconcontact-review1, #iconcontact-review2, #iconcontact-review3 {
+width: 60px;
+height: 60px;
+margin: 0 auto;   
+}
 
 #phoneiconcontact { 
 width: 40px;
@@ -210,48 +221,6 @@ height: 40px;
     background-color: orange;
     margin: 0 auto; 
 }
-
-
-#aboutpic {
-    
-display: -webkit-flex;
-display: flex;
-width: 100%;
-    height: 75vh;
-    padding: 0;
-    margin: 0;
-}
-
-#about1, #about2, #about3 {
- width: 33.3333333vw;     
-}
-
-#about1 {
-    background: url(../images/about1black.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-#about2 {
-    background: url(../images/about2.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-
-#about3 {
-    background: url(../images/about3black.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-
 
 
 /**************************************************
@@ -543,13 +512,13 @@ font-style: italic;
 }
     
 .first::first-letter {
-    font-size: 400%;
+    font-size: 350%;
     color: #d64d2b;
     float: left; 
  line-height: 35px;
- padding-top: 15px; 
- padding-right: 10px;
-    font-family: Times, serif, Georgia;
+ padding-top: 14px; 
+ padding-right: 7px;
+font-family: Times, serif, Georgia;
 }
     
 
@@ -597,7 +566,7 @@ article {
 background-color: white;
 padding: 50px 20px 50px 20px;
 width: 100%;
-    background-color: #E8E8E8;
+background-color: white;
 }
     
 
@@ -614,7 +583,7 @@ height: 100vh;
 position: relative;
 display: inherit;
 opacity: none;
-background: url(../images/desktopphoto.jpg) no-repeat center center fixed;
+background: url(../images/desktoppic.jpg) no-repeat center center fixed;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -623,7 +592,7 @@ background-size: cover;
     
 #iframe {
 /*margin: 0 auto;*/
-width: 90%;
+width: 100%;
 }
 
       
@@ -639,21 +608,64 @@ height: 40px;
 }
 
     
-#teachercontainer, #contact, #description, #lessons, #intro {
+#teachercontainer, #description, #lessons, #intro, #contact-desktop {
 display: -webkit-flex;
 display: flex;
 width: 100%;
-background-color: #E8E8E8;
+background-color: white;
 padding: 0;
 }
     
+#contact {
+ display: none;   
+    
+}
+    .contact-white, .contact-grey {
+     width: 33.3333333%;   
+      padding: 100px 40px 100px 40px;     
+    }
+    .contact-grey {
+     background-color: #F7F7F7;   
+        
+    }
+    
+p#contact-text1, p#contact-text2, p#contact-text3, p#review-text1, p#review-text2, p#review-text3 {
+     margin: 0 auto;
+        font-size: 2em;
+        text-align: center;
+        padding-top: 40px;
+        }
+    
+p#contact-text1, p#contact-text2, p#contact-text3 {
+       color: #757575;  
+         }
+    
+    p#review-text1, p#review-text2, p#review-text3 {
+        
+     color: black;   
+    }
+
+    p#review-text, p#review-name {
+     margin: 0 auto;
+        text-align: center;
+font-size: 1.1em;
+        color: #757575;
+        max-width: 85%;
+        padding-top: 20px;
+        }
+
+    
+    .contact-white {
+     background-color: #D9D9D9;  
+    }
+    
     #introbio {
-        width: 70%;
+        width: 66.6666667%;
         padding: 50px 80px 50px 80px;  
     }
     
     #intropic {
-         width: 30%;
+         width: 33.3333333%;
 background: url(../images/about3.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -693,16 +705,9 @@ background-size: cover;
         
     }
 
-#contactsection, #contactsection2 {
-    width: 50%; 
-    }
-#contactsection {
-    padding: 40px 0 60px 0; 
-}
-    
-    #contactsection2 {
-        padding: 60px 0 60px 0;
-    }
+
+
+
 
 
 #matthewimage {
@@ -794,6 +799,7 @@ margin: 75px auto 0 auto;
 color: white;
 }
     
+    
  
     
 /**************************************************
@@ -804,15 +810,22 @@ Secondary Page Header styling
  
 .home2 {
 width: 100%;
-height: 40vh; 
+height: 30vh; 
 position: relative;
 opacity: none;
     display: inherit;
 
 }
     
-#lessondesktop {
+    .color1 {
+        
+      width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.7);
+  color:#fff;}
     
+#lessondesktop {
+
 background: url(../images/lessondesktop.jpg) no-repeat center center fixed;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -833,7 +846,7 @@ background-size: cover;
     
 .opening1 {
 background-color: transparent;
-margin: auto;
+margin-right: auto;
 position: absolute;
 top: 0; left: 0; bottom: 0; right: 0;
 height: 200px;
@@ -846,6 +859,7 @@ color: white;
 font-family: 'Playfair Display', serif;
 }
     
+
     
 /**************************************************
 ***************************************************
