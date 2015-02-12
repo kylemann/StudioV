@@ -29,7 +29,7 @@ vertical-align: middle;
 
 li a {
 color: white;   
-font-family: 'PT Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
 }
 
 #logo {
@@ -60,6 +60,7 @@ img {
 
 a {
  text-decoration: none; 
+    color: #666666;
 }
 
 .cover {
@@ -67,24 +68,20 @@ display: none;
 }
 
 
-
-
-
-#text-wrapper {
-    font-size: 1.1em;
-    line-height: 1.3em;
-font-family: 'PT Sans', sans-serif;
+.text-wrapper {
+font-family: 'Open Sans', sans-serif;
 }
 
+/*
 #text-wrapper p {
  -webkit-margin-before: 1.5em;
 -webkit-margin-after: 1.55em;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px;   
-color: #383838;
 width: 90%;
 margin: 0 auto;
 }
+*/
 
 
 
@@ -92,25 +89,21 @@ h2, h3, h4 {
 text-align: center; 
 font-family: 'Playfair Display', serif;
 color: #d64d2b;
--webkit-margin-before: 1.4em;
--webkit-margin-after: 1.2em;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px; 
 }
 
 
 h2 {
-font-size: 1.65em;      
+font-size: 1.5em;      
 }
 
-
-h3 {
-font-size: 1.3em;   
-}
-
-h4 {
+h3, h4 {
 font-size: 1.2em;   
 }
+
 
 #contact h4 {
  color: black;
@@ -121,10 +114,9 @@ font-size: 1.2em;
 .main-footer {
 text-align: center;
 font-size: .7rem;
-
 padding: 2px;
 background-color: #FCFCFC;
-color: black;
+color: grey;
 display: block;
 width: 100%;
 margin: 0 auto;
@@ -138,8 +130,8 @@ display: none;
 }
 
 article {
- width: 90%; 
-     margin: 0 auto;
+width: 90%; 
+margin: 0 auto;
 }
 
 .mobile-hide {
@@ -151,37 +143,58 @@ article {
  text-align: center;   
 }
 
-blockquote {
 
-font-size: .85em;
-line-height: 1.5em;
-font-style: italic;
-    
-}
 
 iframe {
  width: 100%;
 }
+
+.formatting, .formatting-header {
+        width: 95%;
+        padding: 10px 0px 10px 0px;  
+        margin: 0 auto;
+        font-size: 1.15em;
+        line-height: 1.35em;
+    }
 /**************************************************
 ***************************************************
 Review and Contact Sections - MOBILE
 ***************************************************
 **************************************************/
 
-p#contact-text1, p#contact-text2, p#contact-text3, p#review-text1, p#review-text2, p#review-text3 {
+.contact-text {
      margin: 0 auto;
-        font-size: 1.5em;
+        font-size: 2em;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 20px;
+        }
+
+.review-text3 {
+     margin: 40px auto 40px auto;
+        font-size: 2.5em;
+        text-align: center;
+font-family: 'PT Sans Narrow', sans-serif;
+
         }
     
-p#contact-text1, p#contact-text2, p#contact-text3 {
+.contact-text {
        color: #757575;  
          }
     
-    p#review-text1, p#review-text2, p#review-text3 {  
-     color: black;   
+.review-text3 {  
+     color: #d64d2b;   
     }
+
+.review-text, .review-text-name {
+     margin: 0 auto;
+        text-align: center;
+font-size: 1.15em;
+        color: #757575;
+        max-width: 90%;
+        }
+.review-text-name {
+ margin-top: 40px;   
+}
 /**************************************************
 ***************************************************
 Images and Icons
@@ -205,21 +218,18 @@ height: 40px;
 margin: 0 auto;    
 }
 
-#iconcontact-review1, #iconcontact-review2, #iconcontact-review3 {
+.iconcontact-review {
+    
 width: 60px;
 height: 60px;
 margin: 0 auto;   
 }
 
-#phoneiconcontact { 
-width: 40px;
-height: 40px;
-    margin: 0 auto;
-}
+
 
 .reviewimg {
- width: 150px;
-    height: 150px;
+ width: 125px;
+    height: 125px;
     border-radius: 100%;
     background-color: orange;
     margin: 0 auto; 
@@ -244,7 +254,6 @@ text-align: center;
 vertical-align: middle;
 line-height: 110px;
 color: white;
-font-family: 'PT Sans', sans-serif;
 }
 
 
@@ -294,7 +303,7 @@ Scrolling Image Slideshow
         -webkit-animation: moveSlideshow 60s linear infinite;
         -moz-animation:    moveSlideshow 60s linear infinite;
         
-        -webkit-transform: translate3d(0,0,0); /* Performance */
+        -webkit-transform: translate3d(0,0,0);  Performance 
     
     }
     #tech-slideshow #tech-slideshow-1 {
@@ -368,6 +377,26 @@ Scrolling Image Slideshow
   background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,100));
 }
 
+.contact-box {
+width: 90%;   
+padding: 20px 10px 20px 20px;  
+    margin: 50px auto;
+    }
+
+    .light-color-mobile {
+ background-color: #F5F5F5;   
+    
+}
+    
+.medium-color-mobile {
+ background-color: #EBEBEB;   
+    
+}
+    
+.dark-color-mobile {
+ background-color: #DEDEDE;   
+}
+
 
 /**************************************************
 ***************************************************
@@ -390,7 +419,7 @@ width: 33.3333333%;
     }
 
 #opening h2 {           
-font-size: 1em;
+font-size: 3em;
 text-decoration: none;
 font-family: 'Playfair Display', serif;
 }
@@ -415,9 +444,7 @@ MEDIA QUERY - Above 790 PX  DESKTOP
 @media only screen and (min-width: 790px) {
     
 /**************************************************
-***************************************************
 Navigation Bar Styling
-***************************************************
 **************************************************/
 
  nav {
@@ -430,7 +457,7 @@ height: 95px;
 -o-transition: all .5s ease-in-out;
 transition: all .5s ease-in-out;
 background: transparent;
-     clear: right;
+/*     clear: right;*/
 }
     
 nav ul {
@@ -442,8 +469,9 @@ margin-left: auto;
 nav ul li {
 display: -webkit-flex;
 display: inline-flex;
-font-size: 1.1em;   
+font-size: 1em;   
 padding: 15px;
+    -webkit-align-self: center;
     align-self: center;
     }
     
@@ -466,6 +494,7 @@ background-image: none;
     }
     
 nav ul li a {
+    display: -webkit-flex;
 color: white; 
 /*
 -webkit-transition: all 3s ease-in-out;
@@ -473,27 +502,20 @@ color: white;
 -o-transition: all 3s ease-in-out;
 transition: all 3s ease-in-out;
 */
-font-size: .7em;
+
 }
-    
-    /**************************************************
-***************************************************
-Main-Wrapper Styling
-***************************************************
+
+/**************************************************
+Main-Wrapper Styling TYPE/COLOR/HOVER/DESKTOP-MOBILE HIDE
 **************************************************/
-  
+ 
+
+    
 a:hover {
 color: #d64d2b;
 text-decoration: none;
 }
 
-  
- 
-#intro p {
- font-size: 2.5em;
-    line-height: 2.75em;
-    
-}
     
 .desktop-hide {
   display: none;   
@@ -504,7 +526,8 @@ text-decoration: none;
     display: inherit;   
     }
 
-#text-wrapper p {  
+/*
+.text-wrapper p {  
 font-size: 1.1em;
 line-height: 1.35em;
 width:100%;
@@ -513,14 +536,50 @@ width:100%;
 -webkit-margin-start: 0;
 -webkit-margin-end: 0px;  
  }
+*/
 
+/*
     
 blockquote {
 
-font-size: .9em;
+font-size: 1em;
 line-height: 1.3em;
 font-style: italic;
+    margin-top: 100px;
     
+}
+*/
+    
+/*
+    blockquote {
+
+font-size: 1em;
+line-height: 1.5em;
+font-style: italic;
+  font-family: 'Arvo', serif;
+}
+*/
+    
+blockquote {
+    font-size: 1em;
+line-height: 1.45em;
+  margin: 75px auto 0 auto;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+      max-width: 600px;
+     font-family: 'Arvo', serif;
+    font-style: italic;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 6em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.3em;
+}
+blockquote p {
+  display: inline;
 }
     
 .first::first-letter {
@@ -528,12 +587,138 @@ font-style: italic;
     color: #d64d2b;
     float: left; 
  line-height: 35px;
- padding-top: 14px; 
- padding-right: 7px;
-font-family: Times, serif, Georgia;
+ padding-top: 10px; 
+ padding-right: 6px;
+font-family: 'Playfair Display', serif;
 }
     
 
+
+#contact h4 {
+color: black;
+font-size: 1em;
+margin-top: 14px;
+}
+    
+article {
+padding: 50px 20px 50px 20px;
+width: 100%;
+}
+    
+    #iframe {
+/*margin: 0 auto;*/
+width: 100%;
+}
+
+      
+.iconcontact { 
+width: 40px;
+height: 40px;
+}
+    
+#phoneiconcontact { 
+width: 40px;
+height: 40px;
+    margin: 0 auto;
+}
+    
+    .light-color {
+ background-color: #F5F5F5;   
+    
+}
+    
+.medium-color {
+ background-color: #EBEBEB;   
+    
+}
+    
+.dark-color {
+ background-color: #DEDEDE;   
+}
+    
+#contact {
+ display: none;   
+    
+}
+    
+    
+
+    
+        
+/**************************************************
+HOVER and ANIMATION FEATURES
+**************************************************/
+    
+/* Shrink on HOVER */
+    
+a.hvr-shrink {
+    
+display: flex;
+vertical-align: middle;
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-osx-font-smoothing: grayscale;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: transform;
+transition-property: transform;
+margin: 0 auto;
+}
+    
+a.hvr-shrink:hover, a.hvr-shrink:focus, a.hvr-shrink:active {
+-webkit-transform: scale(0.9);
+transform: scale(0.9);
+}
+    
+/**************************************************
+REVIEW PAGE STYLING
+**************************************************/
+
+  .review-block1 {
+width: 33.3333333%;
+padding: 60px;  
+margin: 0 auto;
+max-width: 500px;
+font-size: 1em;
+line-height: 1.35em;
+    text-align: center;
+    
+}  
+#review-block3 {
+        width: 33.3333333%;
+background: url(../images/about1.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+
+            }
+    
+    #review-block4 {
+        width: 33.3333333%;
+background: url(../images/review-block4.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+
+            }
+    
+    .reviewimg {
+margin-bottom: 40px;   
+    
+}
+   
+    
+    
+    /**************************************************
+***************************************************
+Page Break images "COVER"
+***************************************************
+**************************************************/
     
 .cover {
 display: inherit;
@@ -575,138 +760,64 @@ background: url(../images/cover2.jpg)no-repeat center center;
 -o-background-size: cover; 
 background-size: cover;
 }
-
-#contact h4 {
-color: black;
-font-size: 1em;
-margin-top: 14px;
-}
     
-article {
-background-color: white;
-padding: 50px 20px 50px 20px;
+     
+    /**************************************************
+***************************************************
+FLEXBOX - PAGE DESCIPTION AND RESPONSIVE SECTIONS
+***************************************************
+**************************************************/
+
+    
+#teachercontainer, #description, #lessons, #contact-desktop, #monthly, #review-row, #review-row2 {
+display: -webkit-flex;
+display: flex;
 width: 100%;
-background-color: white;
+/*background-color: white;*/
+padding: 0;
 }
     
-
-.content {
-width: 70%;
-max-width: 800px;
-margin: 0 auto;
-align-content: center;
+ .formatting {
+        width: 66.6666667%;
+        padding: 50px;  
+        max-width: 750px;
+        font-size: 1.2em;
+        line-height: 1.55em;
     }
     
-#home {
-width: 100%;
-height: 100vh; 
-position: relative;
-display: inherit;
-opacity: none;
-background: url(../images/desktoppic.jpg) no-repeat center center fixed;
+.formatting-header {
+width: 66.6666667%;
+padding: 50px 10px 50px 20px;  
+max-width: 775px;
+font-size: 1.3em;
+line-height: 1.8em;
+    }
+    
+    
+
+#review-row {
+     height: 75vh;   
+        
+    }
+.contact-box {
+width: 33.3333333%;   
+padding: 90px 40px 90px 40px;  
+    margin: 0;
+    }
+    
+    
+#review-pic1 {
+  width: 66.6666667%;
+background: url(../images/desktopphoto2.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;
-}
-    
-#iframe {
-/*margin: 0 auto;*/
-width: 100%;
-}
-
-      
-.iconcontact { 
-width: 40px;
-height: 40px;
-}
-    
-#phoneiconcontact { 
-width: 40px;
-height: 40px;
-    margin: 0 auto;
-}
-
-    
-#teachercontainer, #description, #lessons, #intro, #contact-desktop {
-display: -webkit-flex;
-display: flex;
-width: 100%;
-background-color: white;
-padding: 0;
-}
-    
-#contact {
- display: none;   
-    
-}
-.contact-white, .contact-grey {
-     width: 33.3333333%;   
-      padding: 100px 40px 100px 40px;     
-    }
-    .contact-grey {
-     background-color: #F7F7F7;   
         
-    }
+    }   
     
-p#contact-text1, p#contact-text2, p#contact-text3, p#review-text1, p#review-text2, p#review-text3 {
-     margin: 0 auto;
-        font-size: 2em;
-        text-align: center;
-        padding-top: 40px;
-        }
-    
-p#contact-text1, p#contact-text2, p#contact-text3 {
-       color: #757575;  
-         }
-    
-    p#review-text1, p#review-text2, p#review-text3 {
-        
-     color: black;   
-    }
-
-    p#review-text, p#review-name {
-     margin: 0 auto;
-        text-align: center;
-font-size: 1.1em;
-        color: #757575;
-        max-width: 85%;
-        padding-top: 20px;
-        }
-
-    
-    .contact-white {
-     background-color: #D9D9D9;  
-    }
-    
-    #introbio {
-        width: 66.6666667%;
-        padding: 50px 80px 50px 80px;  
-    }
-    
-    #intropic {
-         width: 33.3333333%;
-background: url(../images/about3.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;     
-    }
-    
-    #leveldescription {
-     width: 70%;
-        padding: 50px 80px 50px 80px;
-        
-    }
-    
-    #lessoninfo {
-     width: 70%;
-        padding: 50px 80px 50px 80px;
-        
-    }
-    
-    #levelpic {
-    width: 30%;
+#levelpic {
+    width: 33.3333333%;
 background: url(../images/levelpic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -714,9 +825,10 @@ background: url(../images/levelpic.jpg) no-repeat center center;
 background-size: cover;
         
     }
+
     
 #lessonside {
-    width: 30%;
+    width: 33.3333333%;
 background: url(../images/lessonside.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -726,41 +838,49 @@ background-size: cover;
     }
 
 
-
-
-
+#monthlypic {
+         width: 33.3333333%;
+background: url(../images/monthlypic.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover; 
+}
 
 #matthewimage {
-         width: 33.3333333%;
+        width: 33.3333333%;
 background: url(../images/matthewimage.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover; 
     }
-    
-#teacherinfo {
-width: 66.6666667%;
-padding: 50px 80px 50px 80px;
-    margin: 0;
-}
-    
-
-
 
 
 
     
     
-    /**************************************************
+/**************************************************
 ***************************************************
 Landing Page Styling and Header
 ***************************************************
 **************************************************/
-    
+     
+#home {
+width: 100%;
+height: 100vh; 
+position: relative;
+display: inherit;
+opacity: none;
+background: url(../images/desktopphoto.jpg) no-repeat center center fixed;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+}  
         
 #opening h2 {           
-font-size: 2.4em;
+font-size: 5em;
 text-decoration: none;
     padding: 0;
 }
@@ -770,53 +890,64 @@ background-color: transparent;
 margin: auto;
 position: absolute;
 top: 0; left: 0; bottom: 0; right: 0;
-height: 500px;
+height: 400px;
+/*    background-color: red;*/
+    
 }
     
-
-    
+  
 #statement {
         
 width: 100%;
 margin: 0 auto;
 /*color: #d64d2b;*/
 
-
 }
     
 #statement h2 {
         
 color: white;
--webkit-margin-before: 2em;
--webkit-margin-after: .4em;
+    margin-bottom: -5px;
+    margin-top: 50px;
+/*
+-webkit-margin-before: 50px;
+-webkit-margin-after: -15px;
 -webkit-margin-start: 0px;
 -webkit-margin-end: 0px; 
+*/
 font-family: 'Playfair Display', serif;
         
 }
 
 #opening p {
 text-align: center;
-font-size: 1em;
-line-height: 1.2em;
-font-family: 'PT Sans', sans-serif;
+font-size: 1.45em;
+/*line-height: 1.2em;*/
+/*
+    -webkit-margin-before: -100px;
+-webkit-margin-after: 50px;
+*/
+/*  font-family: 'Open Sans Condensed', sans-serif;*/
+/*    font-family: 'Open Sans', sans-serif;*/
 margin: 0 auto;
-font-weight: bold;
+/*font-family: 'PT Sans Narrow', sans-serif;*/
+font-family: 'Arvo', serif;
 color: #d64d2b;
-
-
      }
     
     
 #learn {
    display: -webkit-flex;
-width: 175px;
-height: 45px;
-padding: 10px 40px 10px 40px;
+width: 170px;
+height: 40px;
+padding: 8px 35px 10px 40px;
 background-color: hsla(0, 0%, 0%, 0.62);
-font-size: 1em;
+font-size: 18px;
 margin: 75px auto 0 auto;
 color: white;
+text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
 }
     
     
@@ -824,25 +955,19 @@ color: white;
     
 /**************************************************
 ***************************************************
-Secondary Page Header styling
+Secondary Page Header styling AND Images
 ***************************************************
 **************************************************/
  
 .home2 {
 width: 100%;
-height: 30vh; 
+height: 40vh; 
 position: relative;
 opacity: none;
     display: inherit;
 
 }
     
-    .color1 {
-        
-      width:100%;
-  height:100%;
-  background-color:rgba(0,0,0,0.7);
-  color:#fff;}
     
 #lessondesktop {
 
@@ -854,7 +979,7 @@ background-size: cover;
     
 }
     
-    #reviewdesktop {
+#reviewdesktop {
     
 background: url(../images/reviewdesktop.jpg) no-repeat center center fixed;
 -webkit-background-size: cover; 
@@ -865,129 +990,22 @@ background-size: cover;
 }
     
 .opening1 {
-background-color: transparent;
+/*background-color: transparent;*/
+/*
 margin-right: auto;
 position: absolute;
-top: 0; left: 0; bottom: 0; right: 0;
-height: 200px;
+*/
+/*top: 0; left: 0; bottom: 0; right: 0;*/
+/*height: 200px;*/
     width: 100%;
 }
     
 .opening1 h2 {           
-font-size: 3.5em;
+font-size: 5em;
 color: white;
 font-family: 'Playfair Display', serif;
-}
-    
-
-    
-/**************************************************
-***************************************************
-REVIEW PAGE STYLING
-***************************************************
-**************************************************/
-
-
-    
-    /**************************************************
-***************************************************
-HOVER and ANIMATION FEATURES
-***************************************************
-**************************************************/
-    
-/* Shrink on HOVER */
-    
-a.hvr-shrink {
-    
-display: flex;
-vertical-align: middle;
--webkit-transform: translateZ(0);
-transform: translateZ(0);
-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
--moz-osx-font-smoothing: grayscale;
--webkit-transition-duration: 0.3s;
-transition-duration: 0.3s;
--webkit-transition-property: transform;
-transition-property: transform;
-margin: 0 auto;
-}
-    
-a.hvr-shrink:hover, a.hvr-shrink:focus, a.hvr-shrink:active {
--webkit-transform: scale(0.9);
-transform: scale(0.9);
-}
-    
-
-    
-    
-}
-
-@media only screen and (min-width: 990px) {
-    
-.reviewcolumn {
-display: -webkit-flex;
-display: flex;
-width: 100%;
-}
-    
-.reviewcolumn {
- 
-margin: 70px auto 80px auto;
-    
-}
-    
-
-
-.review1 {
-width: 25%;
-    
-}
-    
-    .review2 {
-width: 75%;
-    
-}
-    
-#opening h2 {           
-font-size:2.5em;
-}
-
-#opening p {
- font-size: 1.1em;   
-}
-    
-}
-
-@media only screen and (min-width: 1100px) {
-    
-  #opening h2 {           
-font-size: 3em;
-} 
-    
-}
-
-@media only screen and (min-width: 1350px) {
-    
-#opening h2 {           
-font-size: 3.8em;
-} 
-        
-#opening p {
- font-size: 1.2em;   
-}
 
 }
-        
-@media only screen and (min-width: 1550px) {
     
-#opening h2 {           
-font-size: 4em;
-    }
-#opening p {
- font-size: 1.3em;   
-}             
-     
     
 }
