@@ -156,6 +156,31 @@ iframe {
         font-size: 1.15em;
         line-height: 1.35em;
     }
+
+a:hover{
+color: #d64d2b;
+    text-decoration: none;
+}
+
+a:active{
+color: #d64d2b;
+    text-decoration: none;
+}
+
+a:visited {
+    
+ text-decoration: none;   
+}
+
+a:focus {
+ outline: none;   
+}
+
+a.active {
+color: #d64d2b;
+    text-decoration: none;
+}
+
 /**************************************************
 ***************************************************
 Review and Contact Sections - MOBILE
@@ -169,6 +194,70 @@ Review and Contact Sections - MOBILE
         padding-top: 20px;
         }
 
+.tuition-text3 {
+margin: 50px auto 50px auto;
+font-size: 3.75em;
+text-align: center;
+    font-family: 'Open Sans', sans-serif;
+ color: #d64d2b;    
+}
+
+.dollar {
+ font-size: .5em;   
+  color: #d64d2b; 
+vertical-align: super;
+}
+
+.month {
+ font-size: .25em;   
+    
+}
+
+.study-type {
+ font-size: .85em;
+font-style: italic;
+color: grey;
+  text-align: center;
+}
+
+p.tuition-header {
+     color: black;
+        font-size: 3em;
+        margin: 0 auto;
+    text-align: center;
+    }
+   
+.mask { 
+ height: 1px; 
+    margin: 25px auto 0 auto;
+      width:75%; 
+border-radius: 1px;
+      box-shadow:0 0 2px black;
+    }
+     
+.tuition-text {
+margin: 0 auto;
+text-align: center;
+font-size: 1em;
+color: #757575;
+width: 80%;
+max-width: 300px;
+    text-align: left;
+}
+
+.who-for {
+ font-size: 1em;
+font-weight: bold;
+color: #d64d2b;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.tuition-box {
+ margin: 40px auto;  
+    
+    padding: 25px 5px 25px 5px; 
+    
+}
 .review-text3 {
      margin: 40px auto 40px auto;
         font-size: 2.5em;
@@ -397,6 +486,42 @@ padding: 20px 10px 20px 20px;
  background-color: #DEDEDE;   
 }
 
+blockquote {
+font-family: Georgia, serif;
+font-size: .95em;
+font-style: italic;
+width: 90%;
+    max-width: 500px;
+margin: 50px auto 0.25em auto;
+padding: 0.25em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+    
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 5em;
+position: absolute;
+left: -20px;
+top: -35px;
+color: #7a7a7a;
+}
+blockquote cite {
+color: #999999;
+font-size: .9em;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+    
+
+
+
 
 /**************************************************
 ***************************************************
@@ -510,11 +635,7 @@ Main-Wrapper Styling TYPE/COLOR/HOVER/DESKTOP-MOBILE HIDE
 **************************************************/
  
 
-    
-a:hover {
-color: #d64d2b;
-text-decoration: none;
-}
+
 
     
 .desktop-hide {
@@ -560,6 +681,7 @@ font-style: italic;
 }
 */
     
+/*
 blockquote {
     font-size: 1em;
 line-height: 1.45em;
@@ -581,6 +703,40 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+*/
+    
+    blockquote {
+font-family: Georgia, serif;
+font-size: .95em;
+font-style: italic;
+width: 500px;
+margin: 50px auto 0.25em auto;
+padding: 0.25em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
+}
+    
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 5em;
+position: absolute;
+left: -20px;
+top: -35px;
+color: #7a7a7a;
+}
+blockquote cite {
+color: #999999;
+font-size: .9em;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+
     
 .first::first-letter {
     font-size: 350%;
@@ -711,7 +867,6 @@ background-size: cover;
 margin-bottom: 40px;   
     
 }
-   
     
     
     /**************************************************
@@ -769,7 +924,7 @@ FLEXBOX - PAGE DESCIPTION AND RESPONSIVE SECTIONS
 **************************************************/
 
     
-#teachercontainer, #description, #lessons, #contact-desktop, #monthly, #review-row, #review-row2 {
+#teachercontainer, #description, #lessons, #contact-desktop, #monthly, #review-row, #review-row2, #tuition-desktop {
 display: -webkit-flex;
 display: flex;
 width: 100%;
@@ -803,6 +958,12 @@ line-height: 1.8em;
 width: 33.3333333%;   
 padding: 90px 40px 90px 40px;  
     margin: 0;
+    }
+    
+.tuition-box {
+ width: 33.3333333%;   
+padding: 45px 40px 45px 40px;  
+    margin: 0;   
     }
     
     
@@ -872,7 +1033,7 @@ height: 100vh;
 position: relative;
 display: inherit;
 opacity: none;
-background: url(../images/desktopphoto.jpg) no-repeat center center fixed;
+background: url(../images/desktopphoto2.jpg) no-repeat center center fixed;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -907,7 +1068,7 @@ margin: 0 auto;
 #statement h2 {
         
 color: white;
-    margin-bottom: -5px;
+    margin-bottom: -15px;
     margin-top: 50px;
 /*
 -webkit-margin-before: 50px;
@@ -916,7 +1077,7 @@ color: white;
 -webkit-margin-end: 0px; 
 */
 font-family: 'Playfair Display', serif;
-        
+ letter-spacing: .03em;       
 }
 
 #opening p {
@@ -927,12 +1088,13 @@ font-size: 1.45em;
     -webkit-margin-before: -100px;
 -webkit-margin-after: 50px;
 */
-/*  font-family: 'Open Sans Condensed', sans-serif;*/
-/*    font-family: 'Open Sans', sans-serif;*/
+
+    font-family: 'Open Sans', sans-serif;
 margin: 0 auto;
 /*font-family: 'PT Sans Narrow', sans-serif;*/
-font-family: 'Arvo', serif;
+/*font-family: 'Arvo', serif;*/
 color: #d64d2b;
+    font-weight: 400;
      }
     
     
