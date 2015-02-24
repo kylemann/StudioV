@@ -5,10 +5,11 @@
 
 /**************************************************
 ***************************************************
-Navigation Bar Styling
+Navigation Bar Styling 
 ***************************************************
 **************************************************/
 
+/*
 nav {
  background-color: black; 
     display: inline-block;
@@ -26,21 +27,49 @@ padding: 5px;
 vertical-align: middle;
 }
 
+*/
 
 li a {
 color: white;   
 font-family: 'Open Sans', sans-serif;
+    text-align: right;
 }
 
 #logo {
     width: 65px;
     height: 65px;
     border-radius: 100%;
-    margin-right: 5px;
+   margin: 1px auto 0 1px;
 }
 
+nav {
+  background-color: black; 
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 77px;
+    z-index: 105;  
+}
 
+nav ul {
+/* width: 100%;   */
+  display: -webkit-flex;
+display: flex;
 
+}
+
+nav ul li {
+ width: 20%;
+    display: -webkit-flex;
+     -webkit-align-self: center;
+    align-self: center;
+    align-self: center;
+    font-size: .8em;
+padding: 5px;
+}
+nav ul li:first-child {
+ margin-right: 15px;   
+}
 
 
 /**************************************************
@@ -193,6 +222,17 @@ color: #d64d2b;
     text-decoration: none;
 }
 
+.first::first-letter {
+    font-size: 350%;
+    color: #d64d2b;
+    float: left; 
+ line-height: 35px;
+ padding-top: 10px; 
+ padding-right: 6px;
+    padding-bottom: 10px;
+font-family: 'Playfair Display', serif;
+}
+
 /**************************************************
 ***************************************************
 Review and Contact Sections - MOBILE
@@ -200,10 +240,10 @@ Review and Contact Sections - MOBILE
 **************************************************/
 
 .contact-text {
-        font-size: 2em;
+        font-size: 1.25em;
         text-align: center;
            color: #757575;
-    margin: 45px auto;
+    margin: 15px auto;
     font-family: 'Open Sans', sans-serif;
         }
 
@@ -591,8 +631,12 @@ font-family: 'Playfair Display', serif;
     font-size: 1em;
         display: inherit;
 }
+    
+    nav ul li {
 
+    font-size: 1.25em;
 
+    }
 
 }
 
@@ -635,16 +679,19 @@ font-size: 1em;
 padding: 15px;
     -webkit-align-self: center;
     align-self: center;
-    }
+    width: auto;
+}
     
+/*
 nav ul li:first-child  {
     margin-right: auto;
 }
+*/
 
 #logo {
     height: 85px;
     width: 85px;
-margin-left: 15px;
+margin-left: 10px;
     margin-top: 5px;
     display: inline-block;
     margin-right: auto;
@@ -717,19 +764,8 @@ blockquote cite:before {
 content: "\2014 \2009";
 }
 
-    
-.first::first-letter {
-    font-size: 350%;
-    color: #d64d2b;
-    float: left; 
- line-height: 35px;
- padding-top: 10px; 
- padding-right: 6px;
-font-family: 'Playfair Display', serif;
-}
-    
 
-
+    
 #contact h4 {
 color: black;
 font-size: 1em;
@@ -776,6 +812,12 @@ height: 40px;
  display: none;   
     
 }
+    
+    .contact-text {
+        font-size: 2em;
+    margin: 45px auto;
+        }
+
     
     
 
@@ -824,7 +866,7 @@ line-height: 1.35em;
     
 }  
 #review-block3 {
-        width: 33.3333333%;
+        width: 50%;
 background: url(../images/about1.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -870,6 +912,14 @@ padding: 0;
 -o-background-size: cover; 
 background-size: cover;   
 }
+    
+    #cover5 {
+     background: url(../images/cover5.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;   
+}
 
 #reviewcover {
          background: url(../images/reviewcover.jpg) no-repeat center center;
@@ -895,7 +945,7 @@ background: url(../images/cover2.jpg)no-repeat center center;
 -o-background-size: cover; 
 background-size: cover;
 }
-    
+  
      
     /**************************************************
 ***************************************************
@@ -904,7 +954,7 @@ FLEXBOX - PAGE DESCIPTION AND RESPONSIVE SECTIONS
 **************************************************/
 
     
-#teachercontainer, #description, #lessons, .contact-desktop, #monthly, #review-row, #review-row2, #tuition-desktop {
+#teachercontainer, #lessons, .contact-desktop, #monthly, #review-row, #review-row2, #tuition-desktop {
 display: -webkit-flex;
 display: flex;
 width: 100%;
@@ -950,8 +1000,8 @@ padding: 45px 40px 45px 40px;
     
     
 #review-pic1 {
-  width: 66.6666667%;
-background: url(../images/desktophoto2.jpg) no-repeat center center;
+  width: 50%;
+background: url(../images/review-pic1.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -968,11 +1018,21 @@ background: url(../images/levelpic.jpg) no-repeat center center;
 background-size: cover;
         
     }
+    
+    #tuition-pic {
+    width: 33.3333333%;
+background: url(../images/tuition-pic.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+        
+    }
 
     
 #lessonside {
     width: 33.3333333%;
-background: url(../images/lessonside.jpg) no-repeat center center;
+background: url(../images/lessonpic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1109,7 +1169,6 @@ height: 35vh;
 position: relative;
 opacity: none;
     display: inherit;
-
 }
     
     
@@ -1125,7 +1184,7 @@ background-size: cover;
     
 #reviewdesktop {
     
-background: url(../images/reviewdesktop.jpg) no-repeat center center;
+background: url(../images/review-desktop.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1136,6 +1195,16 @@ background-size: cover;
 #tuitiondesktop-pic {
     
 background: url(../images/tuitiondesktop.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+    
+}
+    
+    #contact-desktop {
+    
+background: url(../images/contactdesktop.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1159,6 +1228,7 @@ font-size: 4.5em;
 color: white;
 font-family: 'Playfair Display', serif;
     letter-spacing: .07em;
+
 
 }
     
