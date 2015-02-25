@@ -227,7 +227,7 @@ color: #d64d2b;
     color: #d64d2b;
     float: left; 
  line-height: 35px;
- padding-top: 10px; 
+ padding-top: 13px; 
  padding-right: 6px;
     padding-bottom: 10px;
 font-family: 'Playfair Display', serif;
@@ -303,6 +303,12 @@ max-width: 300px;
 font-weight: bold;
 color: #d64d2b;
 font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.small-cap {
+font-family: 'Playfair Display SC', serif;   
+font-size: .85em;
+color: #d64d2b;
 }
 
 .map-for {
@@ -1021,7 +1027,7 @@ background-size: cover;
     
     #tuition-pic {
     width: 33.3333333%;
-background: url(../images/tuition-pic.jpg) no-repeat center center;
+background: url(../images/tuitionpic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1119,7 +1125,7 @@ color: white;
 -webkit-margin-end: 0px; 
 */
 font-family: 'Playfair Display', serif;
- letter-spacing: .03em;       
+ letter-spacing: .015em;       
 }
 
 #opening p {
@@ -1163,6 +1169,7 @@ Secondary Page Header styling AND Images
 ***************************************************
 **************************************************/
  
+
 .home2 {
 width: 100%;
 height: 35vh; 
@@ -1224,13 +1231,24 @@ position: absolute;
 }
     
 .opening1 h2 {           
-font-size: 4.5em;
+font-size: 4em;
 color: white;
 font-family: 'Playfair Display', serif;
     letter-spacing: .07em;
+/*    margin-top: 10%;*/
 
-
+/*
+font-family: 'Open Sans', sans-serif;
+font-weight: bold;
+*/
 }
-    
+/*
+.background-black {
+ width: 100%;
+    height: 100%;
+background-color: hsla(0, 0%, 0%, 0.32);
+   z-index: 300;
+}
+*/
     
 }
