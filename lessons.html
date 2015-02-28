@@ -38,6 +38,21 @@
 
         });
             </script>
+        <!-- Shrinking Nav On Scroll -->
+            <script type="text/javascript">
+           
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 1){  
+                $('h2').addClass("hide");
+         
+            }
+            else{
+                $('h2').removeClass("hide");
+               
+            }
+
+        });
+            </script>
 
 </head>
 
@@ -45,7 +60,8 @@
     
 
     <nav>
-<a href="index.html"><img id="logo" class="mobile-hide" src="images/mainlogo.jpg"></a>
+<a href="index.html"><img id="logo" class="mobile-hide" src="images/mainlogo.jpg"></a> 
+<!--        <h2 class="header-nav mobile-hide">Lessons</h2>-->
     <ul>
 <li class="desktop-hide"><a href="index.html"><img id="logo" src="images/mainlogo.jpg"></a></li>
         <li><a href="lessons.html" class="active">Lessons</a></li>
@@ -73,7 +89,7 @@ fit, more calm, and generally enjoy a higher quality of life.  Whether you are a
 professional musician or an avid enthusiast and music lover, learning the piano or to compose is 
 a rewarding pursuit which pays dividends throughout life.
 </p>
-            <blockquote>To learn to compose is to give yourself the ability to express your thoughts, your feelings, and your understanding of the way it feels to live life today, right now <br> 
+            <blockquote class="blockquote">To learn to compose is to give yourself the ability to express your thoughts, your feelings, and your understanding of the way it feels to live life today, right now <br> 
 <br>
 <cite>Aaron Copeland</cite>
         </blockquote>
