@@ -9,26 +9,6 @@ Navigation Bar Styling
 ***************************************************
 **************************************************/
 
-/*
-nav {
- background-color: black; 
-    display: inline-block;
-    position: fixed;
-    width: 100%;
-    height: 77px;
-    z-index: 105;
-}
-
-
-nav ul li {
-display: inline-block;
-font-size: .75em;
-padding: 5px;
-vertical-align: middle;
-}
-
-*/
-
 li a {
 color: white;   
 font-family: 'Open Sans', sans-serif;
@@ -36,39 +16,38 @@ font-family: 'Open Sans', sans-serif;
 }
 
 #logo {
-    width: 65px;
-    height: 65px;
-    border-radius: 10px;
-   margin: 1px auto 0 1px;
+width: 65px;
+height: 65px;
+border-radius: 10px;
+margin: 1px auto 0 1px;
 }
 
 nav {
-  background-color: black; 
-    display: inline-block;
-    position: fixed;
-    width: 100%;
-    height: 77px;
-    z-index: 105;  
+background-color: black; 
+display: inline-block;
+position: fixed;
+width: 100%;
+height: 77px;
+z-index: 105;  
 }
 
 nav ul {
-/* width: 100%;   */
-  display: -webkit-flex;
+display: -webkit-flex;
 display: flex;
-
 }
 
 nav ul li {
- width: 20%;
-    display: -webkit-flex;
-     -webkit-align-self: center;
-    align-self: center;
-    align-self: center;
-    font-size: .8em;
+width: 20%;
+display: -webkit-flex;
+-webkit-align-self: center;
+align-self: center;
+align-self: center;
+font-size: .8em;
 padding: 5px;
 }
+
 nav ul li:first-child {
- margin-right: 15px;   
+margin-right: 15px;   
 }
 
 
@@ -79,11 +58,11 @@ Main wrapper styling
 **************************************************/
 
 .none {
- display: none;   
+display: none;   
 }
 
 img {
- width: 100%;   
+width: 100%;   
 }
 
 
@@ -95,18 +74,6 @@ display: none;
 .text-wrapper {
 font-family: 'Open Sans', sans-serif;
 }
-
-/*
-#text-wrapper p {
- -webkit-margin-before: 1.5em;
--webkit-margin-after: 1.55em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px;   
-width: 90%;
-margin: 0 auto;
-}
-*/
-
 
 
 h2, h3, h4 {
@@ -130,9 +97,9 @@ font-size: 1.2em;
 
 
 #contact h4 {
- color: black;
-    font-size: 1.1em;
-    margin-top: 10px;
+color: black;
+font-size: 1.1em;
+margin-top: 10px;
 }
 
 .main-footer {
@@ -170,53 +137,49 @@ margin: 0 auto;
 }
 
 .mobile-hide {
-  display: none;   
+display: none;   
 }
 
 .center {
-    
- text-align: center;   
+text-align: center;   
 }
 
-
-
 iframe {
- width: 100%;
-    margin-bottom: 20px;
+width: 100%;
+margin-bottom: 20px;
 }
 
 .formatting, .formatting-header, .formatting-header2 {
-        width: 95%;
-        padding: 10px 0px 10px 0px;  
-        margin: 0 auto;
-        font-size: 1.15em;
-        line-height: 1.35em;
-    color: #5E5E5E;
-    }
+width: 95%;
+padding: 10px 0px 10px 0px;  
+margin: 0 auto;
+font-size: 1.15em;
+line-height: 1.35em;
+color: #5E5E5E;
+}
 
 a {
- text-decoration: none; 
-    color: #d64d2b;
+text-decoration: none; 
+color: #d64d2b;
 }
 
 a:hover{
 color: #d64d2b;
-    text-decoration: none;
+text-decoration: none;
  
 }
 
 a:active{
 color: #d64d2b;
-    text-decoration: none;
+text-decoration: none;
 }
 
 a:visited {
-    
- text-decoration: none;   
+text-decoration: none;   
 }
 
 a:focus {
- outline: none;   
+outline: none;   
 }
 
 a.active {
@@ -226,13 +189,13 @@ color: #d64d2b;
 }
 
 .first::first-letter {
-    font-size: 350%;
-    color: #d64d2b;
-    float: left; 
- line-height: 35px;
- padding-top: 6px; 
- padding-right: 6px;
-    padding-bottom: 10px;
+font-size: 350%;
+color: #d64d2b;
+float: left; 
+line-height: 35px;
+padding-top: 6px; 
+padding-right: 6px;
+padding-bottom: 10px;
 font-family: 'Playfair Display', serif;
 }
 
@@ -243,62 +206,61 @@ Review and Contact Sections - MOBILE
 **************************************************/
 
 .contact-text {
-        font-size: 1.25em;
-        text-align: center;
-           color: #757575;
-    margin: 15px auto;
-    font-family: 'Open Sans', sans-serif;
-        }
+font-size: 1.25em;
+text-align: center;
+color: #757575;
+margin: 15px auto;
+font-family: 'Open Sans', sans-serif;
+}
 
 .tuition-text3 {
 margin: 50px auto 50px auto;
 font-size: 3.75em;
 text-align: center;
-    font-family: 'Open Sans', sans-serif;
- color: #d64d2b;    
+font-family: 'Open Sans', sans-serif;
+color: #d64d2b;    
 }
 
 .dollar {
- font-size: .5em;   
-  color: #d64d2b; 
+font-size: .5em;   
+color: #d64d2b; 
 vertical-align: super;
 }
 
 .month {
- font-size: .25em;   
+font-size: .25em;   
     
 }
 
 .study-type {
- font-size: .85em;
+font-size: .85em;
 font-style: italic;
 color: black;
-  text-align: center;
+text-align: center;
 }
 
 p.tuition-header {
-     color: grey;
-        font-size: 3em;
-        margin: 0 auto;
-    text-align: center;
-    }
+color: grey;
+font-size: 3em;
+margin: 0 auto;
+text-align: center;
+}
    
 .mask { 
- height: 1px; 
-    margin: 25px auto 0 auto;
-      width:75%; 
+height: 1px; 
+margin: 25px auto 0 auto;
+width:75%; 
 border-radius: 1px;
-/*      box-shadow:0 0 2px black;*/
-    border-bottom: 1px solid #BCBCBC;
-    }
+border-bottom: 1px solid #BCBCBC;
+}
 
 .mask2 { 
- height: 1px; 
-    margin: 30px auto 40px auto;
-      width:95%; 
+height: 1px; 
+margin: 30px auto 40px auto;
+width:95%; 
 border-radius: 1px;
 /*      box-shadow:0 0 2px black;*/
-    border-bottom: 1px solid #BCBCBC;
+border-bottom: 1px solid #BCBCBC;
     }
      
 .tuition-text {
@@ -337,24 +299,25 @@ padding: 25px 5px 25px 5px;
     
 }
 .review-text3 {
-     margin: 40px auto 40px auto;
-        font-size: 2.5em;
-        text-align: center;
+margin: 40px auto 40px auto;
+font-size: 2.5em;
+text-align: center;
 font-family: 'PT Sans Narrow', sans-serif;
 }
     
     
 .review-text3 {  
-     color: #d64d2b;   
+color: #d64d2b;   
     }
 
 .review-text, .review-text-name {
-     margin: 0 auto;
-        text-align: center;
+margin: 0 auto;
+text-align: center;
 font-size: 1.15em;
-        color: #757575;
-        max-width: 90%;
+color: #757575;
+max-width: 90%;
         }
+
 .review-text-name {
  margin-top: 40px;   
 }
@@ -398,40 +361,38 @@ margin: 0 auto;
 
 
 .reviewimg {
- width: 125px;
-    height: 125px;
-    border-radius: 100%;
-    background-color: orange;
-    margin: 0 auto; 
+width: 125px;
+height: 125px;
+border-radius: 100%;
+background-color: orange;
+margin: 0 auto; 
 }
 
 #contact-footer {
- display: -webkit-flex;
+display: -webkit-flex;
 display: flex;
 width: 70%;
-    max-width: 200px;
+max-width: 200px;
 /*background-color: white;*/
 padding: 0;
-    margin: 40px auto;
+margin: 40px auto;
     
 }
     
-    .footer-box {
+.footer-box {
 width: 33.3333333%;
     }
 
 #contact-matt {
- height: 150px;
-    width: 150px;
-    border-radius: 100%;
+height: 150px;
+width: 150px;
+border-radius: 100%;
 background: url(../images/matt-contact.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;
-    margin: 0 auto 20px auto;
-    
-    
+margin: 0 auto 20px auto;   
 }
 
 
@@ -480,120 +441,113 @@ Scrolling Image Slideshow
 **************************************************/
 
 #tech-slideshow {
-        height: 300px;
-        position: relative;
-        overflow: hidden;
-    }
-    #tech-slideshow > div {
-        height: 300px;
-        width: 2526px;
-        background: url(../images/longphoto3.jpg);
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        
-        -moz-transition:  opacity 0.5s ease-out; 
-           -o-transition: opacity 0.5s ease-out; 
-      -webkit-transition: opacity 0.5s ease-out; 
-          -ms-transition: opacity 0.5s ease-out; 
-    
-        /* Slow */
-        -webkit-animation: moveSlideshow 60s linear infinite;
-        -moz-animation:    moveSlideshow 60s linear infinite;
-        
-        -webkit-transform: translate3d(0,0,0);  Performance 
-    
-    }
-    #tech-slideshow #tech-slideshow-1 {
-        /* Sprite */
-        background-position: 0 300px;
-        
-        /* Fast */
-        -webkit-animation: moveSlideshow 20s linear infinite;
-        -moz-animation:    moveSlideshow 20s linear infinite;
-    }
-    #tech-slideshow:hover #tech-slideshow-2 {
-        opacity: 0;
-    }
-    
-    @-webkit-keyframes moveSlideshow {
-        0%   { 
-            -webkit-transform: translateX(0); 
-            -moz-transform:    translateX(0); 
-            -ms-transform:     translateX(0); 
-            -o-transform:      translateX(0); 
-            transform:         translateX(0); 
-        }    
-        100% { 
-            -webkit-transform: translateX(-1684px); 
-            -moz-transform:    translateX(-1684px); 
-            -ms-transform:     translateX(-1684px); 
-            -o-transform:      translateX(-1684px); 
-            transform:         translateX(-1684px); 
-        }
-    }
-    @-moz-keyframes moveSlideshow {
-        0%   { 
-            -webkit-transform: translateX(0); 
-            -moz-transform:    translateX(0); 
-            -ms-transform:     translateX(0); 
-            -o-transform:      translateX(0); 
-            transform:         translateX(0); 
-        }    
-        100% { 
-            -webkit-transform: translateX(-1684px); 
-            -moz-transform:    translateX(-1684px); 
-            -ms-transform:     translateX(-1684px); 
-            -o-transform:      translateX(-1684px); 
-            transform:         translateX(-1684px); 
-        }
+height: 300px;
+position: relative;
+overflow: hidden;
     }
 
+#tech-slideshow > div {
+height: 300px;
+width: 2526px;
+background: url(../images/longphoto3.jpg);
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+-moz-transition:  opacity 0.5s ease-out; 
+-o-transition: opacity 0.5s ease-out; 
+-webkit-transition: opacity 0.5s ease-out; 
+-ms-transition: opacity 0.5s ease-out; 
+/* Slow */
+-webkit-animation: moveSlideshow 60s linear infinite;
+-moz-animation:    moveSlideshow 60s linear infinite;
+-webkit-transform: translate3d(0,0,0);  Performance 
+}
+#tech-slideshow #tech-slideshow-1 {
+/* Sprite */
+background-position: 0 300px;
+/* Fast */
+-webkit-animation: moveSlideshow 20s linear infinite;
+-moz-animation:    moveSlideshow 20s linear infinite;
+}
+#tech-slideshow:hover #tech-slideshow-2 {
+opacity: 0;
+}
+@-webkit-keyframes moveSlideshow {
+0%   { 
+-webkit-transform: translateX(0); 
+-moz-transform:    translateX(0); 
+-ms-transform:     translateX(0); 
+-o-transform:      translateX(0); 
+transform:         translateX(0); 
+}    
+100% { 
+-webkit-transform: translateX(-1684px); 
+-moz-transform:    translateX(-1684px); 
+-ms-transform:     translateX(-1684px); 
+-o-transform:      translateX(-1684px); 
+transform:         translateX(-1684px); 
+}
+}
+@-moz-keyframes moveSlideshow {
+0%   { 
+-webkit-transform: translateX(0); 
+-moz-transform:    translateX(0); 
+-ms-transform:     translateX(0); 
+-o-transform:      translateX(0); 
+transform:         translateX(0); 
+}    
+100% { 
+-webkit-transform: translateX(-1684px); 
+-moz-transform:    translateX(-1684px); 
+-ms-transform:     translateX(-1684px); 
+-o-transform:      translateX(-1684px); 
+transform:         translateX(-1684px); 
+}
+}
+
 #page-wrap { 
-  width: 100%;
-  max-width: 842px; 
-  background: white;
-  margin: 50px auto;
-  position: relative;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+width: 100%;
+max-width: 842px; 
+background: white;
+margin: 50px auto;
+position: relative;
+-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #page-wrap:before, #page-wrap:after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  bottom: 0;
-  width: 20px;
-  background: -webkit-linear-gradient(left, rgba(255,255,255,100), rgba(255,255,255,0));
+content: "";
+position: absolute;
+z-index: 1;
+top: 0;
+bottom: 0;
+width: 20px;
+background: -webkit-linear-gradient(left, rgba(255,255,255,100), rgba(255,255,255,0));
 }
 #page-wrap:before {
-  left: 0;
+left: 0;
 }
 #page-wrap:after {
-  right: 0;
-  background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,100));
+right: 0;
+background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,100));
 }
 
 .contact-box {
 width: 90%;   
 padding: 20px 30px 20px 30px;  
-    margin: 50px auto;
-    }
+margin: 50px auto;
+}
 
-    .light-color-mobile {
- background-color: #F5F5F5;   
-    
+.light-color-mobile {
+background-color: #F5F5F5;       
 }
     
 .medium-color-mobile {
- background-color: #EBEBEB;   
-    
+background-color: #EBEBEB;      
 }
     
 .dark-color-mobile {
- background-color: #DEDEDE;   
+background-color: #DEDEDE;   
 }
 
 .blockquote {
@@ -601,7 +555,7 @@ font-family: Georgia, serif;
 font-size: .95em;
 font-style: italic;
 width: 90%;
-    max-width: 500px;
+max-width: 500px;
 margin: 50px auto 0.25em auto;
 padding: 0.25em 40px;
 line-height: 1.45;
@@ -631,7 +585,7 @@ content: "\2014 \2009";
     
 
 .blockquote-review {
-    font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
 font-size: .95em;
 font-style: normal;
 /*margin: 50px auto 0.25em auto;*/
@@ -656,7 +610,7 @@ color: #999999;
 font-size: .75em;
 display: block;
 margin-top: 5px;
-    font-style: normal;
+font-style: normal;
 }
  
 .blockquote-review cite:before {
@@ -676,7 +630,7 @@ MEDIA QUERY - Above 690 PX - TABLETS
 #pricingcolumn {
 display: -webkit-flex;
 display: flex;
-       width: 100vw; 
+width: 100vw; 
     }
     
     
@@ -691,20 +645,17 @@ font-family: 'Playfair Display', serif;
 }
     
     #contact h4 {
- color: black;
-    font-size: 1em;
-        display: inherit;
+color: black;
+font-size: 1em;
+display: inherit;
 }
     
     nav ul li {
-
-    font-size: 1.25em;
-
-    }
+font-size: 1.25em;
+}
     
-    .first::first-letter {
+.first::first-letter {
  padding-top: 13px; 
-
 }
 
 }
@@ -746,9 +697,9 @@ display: -webkit-flex;
 display: inline-flex;
 font-size: 1em;   
 padding: 15px;
-    -webkit-align-self: center;
-    align-self: center;
-    width: auto;
+-webkit-align-self: center;
+align-self: center;
+width: auto;
 }
     
 /*
@@ -758,13 +709,13 @@ nav ul li:first-child  {
 */
 
 #logo {
-    height: 84px;
-    width: 70px;
+height: 84px;
+width: 70px;
 margin-left: 7px;
-    margin-top: 5px;
-    display: inline-block;
-    margin-right: auto;
-    border-radius: 5px;
+margin-top: 5px;
+display: inline-block;
+margin-right: auto;
+border-radius: 5px;
 }
     
 nav.sticky {
@@ -773,7 +724,7 @@ background-image: none;
     }
     
 nav ul li a {
-    display: -webkit-flex;
+display: -webkit-flex;
 color: white; 
 /*
 -webkit-transition: all 3s ease-in-out;
@@ -784,10 +735,8 @@ transition: all 3s ease-in-out;
 
 }
     
-
-
 nav h2.hide {
-     display: none; 
+display: none; 
     }
 
 /**************************************************
@@ -799,12 +748,12 @@ Main-Wrapper Styling TYPE/COLOR/HOVER/DESKTOP-MOBILE HIDE
 
     
 .desktop-hide {
-  display: none;   
+display: none;   
      
  }
     
 .mobile-hide {
-    display: inherit;   
+display: inherit;   
     }
 
     
@@ -812,7 +761,7 @@ Main-Wrapper Styling TYPE/COLOR/HOVER/DESKTOP-MOBILE HIDE
 font-family: Georgia, serif;
 font-size: 1em;
 font-style: italic;
-    font-weight: 100;
+font-weight: 100;
 width: 500px;
 margin: 50px auto 0.25em auto;
 padding: 0.25em 40px;
@@ -880,7 +829,7 @@ height: 40px;
 #phoneiconcontact { 
 width: 40px;
 height: 40px;
-    margin: 0 auto;
+margin: 0 auto;
 }
     
     .light-color {
@@ -901,44 +850,13 @@ height: 40px;
  display: none;   
     
 }
-    
-    .contact-text {
-        font-size: 2em;
-    margin: 45px auto;
+.contact-text {
+font-size: 2em;
+margin: 45px auto;
         }
 
     
     
-
-    
-        
-/**************************************************
-HOVER and ANIMATION FEATURES
-**************************************************/
-    
-/* Shrink on HOVER */
-    
-a.hvr-shrink {
-    
-display: flex;
-vertical-align: middle;
--webkit-transform: translateZ(0);
-transform: translateZ(0);
-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
--webkit-backface-visibility: hidden;
-backface-visibility: hidden;
--moz-osx-font-smoothing: grayscale;
--webkit-transition-duration: 0.3s;
-transition-duration: 0.3s;
--webkit-transition-property: transform;
-transition-property: transform;
-margin: 0 auto;
-}
-    
-a.hvr-shrink:hover, a.hvr-shrink:focus, a.hvr-shrink:active {
--webkit-transform: scale(0.9);
-transform: scale(0.9);
-}
     
 /**************************************************
 REVIEW PAGE STYLING
@@ -986,12 +904,6 @@ background: url(../images/Contact-Transparency.gif) no-repeat center center;
 -o-background-size: cover; 
 background-size: cover;
             }
-    
-/*
-    .review-text {
-        font-size: 1em;
-    }
-*/
     
     
     /**************************************************
@@ -1076,11 +988,11 @@ padding: 0;
 
     
  .formatting {
-        width: 66.6666667%;
-        padding: 80px 50px;  
-        max-width: 750px;
-        font-size: 1.2em;
-        line-height: 1.55em;
+width: 66.6666667%;
+padding: 80px 50px;  
+max-width: 750px;
+font-size: 1.2em;
+line-height: 1.55em;
     }
     
 .formatting-header {
@@ -1099,34 +1011,33 @@ font-size: 1.3em;
 line-height: 1.8em;
     }
     
-    #signature {
-       height: 172.77px;
-        width: 279.65px;
-     background: url(../images/signature.svg) no-repeat center center;
+#signature {
+height: 172.77px;
+width: 279.65px;
+background: url(../images/signature.svg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
 background-size: cover;
-        margin: 0 auto 40px auto;
-        
+margin: 0 auto 40px auto;     
     }
     
     
 .contact-box {
 width: 33.3333333%;   
 padding: 60px 40px 60px 40px;  
-    margin: 0;
+margin: 0;
     }
     
 .tuition-box {
- width: 33.3333333%;   
+width: 33.3333333%;   
 padding: 45px 40px 45px 40px;  
-    margin: 0;   
+margin: 0;   
     }
     
     
 #review-pic1 {
-  width: 50%;
+width: 50%;
 background: url(../images/review-pic1.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -1136,7 +1047,7 @@ background-size: cover;
     }   
     
 #levelpic {
-    width: 33.3333333%;
+width: 33.3333333%;
 background: url(../images/levelpic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -1146,7 +1057,7 @@ background-size: cover;
     }
     
     #tuition-pic {
-    width: 33.3333333%;
+width: 33.3333333%;
 background: url(../images/tuitionpic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -1157,7 +1068,7 @@ background-size: cover;
 
     
 #lessonside {
-    width: 33.3333333%;
+width: 33.3333333%;
 background: url(../images/lessonpic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -1168,7 +1079,7 @@ background-size: cover;
 
 
 #monthlypic {
-         width: 33.3333333%;
+width: 33.3333333%;
 background: url(../images/monthlypic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -1177,7 +1088,7 @@ background-size: cover;
 }
 
 #matthewimage {
-        width: 33.3333333%;
+width: 33.3333333%;
 background: url(../images/matthewimage.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -1223,8 +1134,7 @@ height: 400px;
 /*    background-color: red;*/
     
 }
-    
-  
+     
 #statement {
         
 width: 100%;
@@ -1233,23 +1143,23 @@ margin: 0 auto;
 
 }
 .header-nav {
-    display: inline;
-      color: white;  
-        font-size: 2.5em;
+display: inline;
+color: white;  
+font-size: 2.5em;
 color: white;
 font-family: 'Playfair Display', serif;
-    letter-spacing: .03em;
+letter-spacing: .03em;
 margin: 0 0 0 20px;
 /*font-family: 'Open Sans', sans-serif;*/
 font-weight: 100;
-    align-self: center;
+align-self: center;
     }
     
 #statement h2 {
         
 color: white;
-    margin-bottom: -15px;
-    margin-top: 50px;
+margin-bottom: -15px;
+margin-top: 50px;
 /*
 -webkit-margin-before: 50px;
 -webkit-margin-after: -15px;
@@ -1257,7 +1167,7 @@ color: white;
 -webkit-margin-end: 0px; 
 */
 font-family: 'Playfair Display', serif;
- letter-spacing: .015em;       
+letter-spacing: .015em;       
 }
 
 #opening p {
@@ -1289,7 +1199,13 @@ margin: 75px auto 0 auto;
 color: white;
 text-align: center;
     font-family: 'Open Sans', sans-serif;
-
+border-radius: 3px;
+}
+    
+a#learn:hover {
+ background-color: hsla(51, 100%, 100%, 0.75);
+    color: black;
+    
 }
     
     
