@@ -1111,7 +1111,7 @@ width: 100%;
 height: 100vh; 
 position: relative;
 display: inherit;
-opacity: none;
+/*opacity: none;*/
 background: url(../images/img-resize.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
@@ -1189,6 +1189,7 @@ color: #d64d2b;
     
     
 a#learn {
+    display: flex;
    display: -webkit-flex;
 width: 170px;
 height: 40px;
@@ -1222,7 +1223,7 @@ Secondary Page Header styling AND Images
 width: 100%;
 height: 35vh; 
 position: relative;
-opacity: none;
+/*opacity: none;*/
     display: inherit;
 }
     
