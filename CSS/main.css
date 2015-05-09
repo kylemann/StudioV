@@ -12,12 +12,12 @@ Navigation Bar Styling
 li a {
 color: white;   
 font-family: 'Open Sans', sans-serif;
-    text-align: right;
+text-align: left;
 }
 
 #logo {
-width: 65px;
-height: 65px;
+width: 50px;
+height: 60px;
 border-radius: 10px;
 margin: 1px auto 0 1px;
 }
@@ -37,13 +37,14 @@ display: flex;
 }
 
 nav ul li {
-width: 20%;
+display: flex;
 display: -webkit-flex;
+    justify-content: space-between;
 -webkit-align-self: center;
 align-self: center;
-align-self: center;
-font-size: .8em;
+font-size: .85em;
 padding: 5px;
+    margin: 0 2px;
 }
 
 nav ul li:first-child {
@@ -449,7 +450,7 @@ overflow: hidden;
 #tech-slideshow > div {
 height: 300px;
 width: 2526px;
-background: url(../images/longphoto3.jpg);
+background: url(../images/index/longphoto3.jpg);
 position: absolute;
 top: 0;
 left: 0;
@@ -700,6 +701,7 @@ padding: 15px;
 -webkit-align-self: center;
 align-self: center;
 width: auto;
+    margin: 0;
 }
     
 /*
@@ -726,13 +728,6 @@ background-image: none;
 nav ul li a {
 display: -webkit-flex;
 color: white; 
-/*
--webkit-transition: all 3s ease-in-out;
--moz-transition: all 3s ease-in-out;
--o-transition: all 3s ease-in-out;
-transition: all 3s ease-in-out;
-*/
-
 }
     
 nav h2.hide {
@@ -870,7 +865,7 @@ width: 66.666667%;
 }  
 #review-block3 {
 width: 33.3333333%;
-background: url(../images/review1.jpg) no-repeat center center;
+background: url(../images/review/review1.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -880,7 +875,7 @@ background-size: cover;
     
     #review-block4 {
         width: 33.3333333%;
-background: url(../images/review-block4.jpg) no-repeat center center;
+background: url(../images/review/review-block4.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -889,7 +884,7 @@ background-size: cover;
     
     #review-block5 {
         width: 33.3333333%;
-background: url(../images/reviewcover.jpg) no-repeat center center;
+background: url(../images/review/reviewcover.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -937,7 +932,7 @@ background-size: cover;
 }
     
         #cover6 {
-     background: url(../images/cover6.jpg) no-repeat center center;
+     background: url(../images/lesson/cover6.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -954,7 +949,7 @@ background-size: cover;
 }
     
     #cover1 {
-background: url(../images/cover1-1.jpg)no-repeat center center;
+background: url(../images/index/cover1-1.jpg)no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -962,7 +957,7 @@ background-size: cover;
 }
 
 #cover2 {
-background: url(../images/cover1.jpg)no-repeat center center;
+background: url(../images/index/cover1.jpg)no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1069,7 +1064,7 @@ background-size: cover;
     
 #lessonside {
 width: 33.3333333%;
-background: url(../images/lessonpic.jpg) no-repeat center center;
+background: url(../images/lesson/lessonpic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1080,7 +1075,7 @@ background-size: cover;
 
 #monthlypic {
 width: 33.3333333%;
-background: url(../images/monthlypic.jpg) no-repeat center center;
+background: url(../images/index/monthlypic.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1089,7 +1084,7 @@ background-size: cover;
 
 #matthewimage {
 width: 33.3333333%;
-background: url(../images/matthewimage.jpg) no-repeat center center;
+background: url(../images/index/matthewimage.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1111,8 +1106,7 @@ width: 100%;
 height: 100vh; 
 position: relative;
 display: inherit;
-/*opacity: none;*/
-background: url(../images/img-resize.jpg) no-repeat center center;
+background: url(../images/index/opening-page.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1230,7 +1224,7 @@ position: relative;
     
 #lessondesktop {
 
-background: url(../images/lessondesktop.jpg) no-repeat center center;
+background: url(../images/pageheaders/lessondesktop.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1240,7 +1234,7 @@ background-size: cover;
     
 #reviewdesktop {
     
-background: url(../images/review-desktop.jpg) no-repeat center center;
+background: url(../images/pageheaders/review-desktop.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1250,7 +1244,7 @@ background-size: cover;
     
 #tuitiondesktop-pic {
     
-background: url(../images/tuitiondesktop.jpg) no-repeat center center;
+background: url(../images/pageheaders/tuitiondesktop.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1260,7 +1254,7 @@ background-size: cover;
     
     #contact-desktop {
     
-background: url(../images/contactdesktop.jpg) no-repeat center center;
+background: url(../images/pageheaders/contactdesktop.jpg) no-repeat center center;
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
@@ -1269,14 +1263,7 @@ background-size: cover;
 }
     
 .opening1 {
-/*background-color: transparent;*/
-/*
-margin-right: auto;
-position: absolute;
-*/
-/*top: 0; left: 0; bottom: 0; right: 0;*/
-/*height: 200px;*/
-    width: 100%;
+ width: 100%;
 }
     
 .opening1 h2 {           
@@ -1291,14 +1278,5 @@ font-weight: 100;
     text-align: left;
 }
 
-/*
-.background-black {
- width: 100%;
-    height: 100%;
-background-color: hsla(0, 0%, 0%, 0.62);
-background-color: hsla(0, 0%, 67%, 0.82);
-   z-index: 300;
-}
-    
-*/
+
 }
