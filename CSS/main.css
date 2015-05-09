@@ -15,7 +15,7 @@ font-family: 'Open Sans', sans-serif;
 text-align: left;
 }
 
-#logo {
+#logo-m {
 width: 50px;
 height: 60px;
 border-radius: 10px;
@@ -710,7 +710,7 @@ nav ul li:first-child  {
 }
 */
 
-#logo {
+#logo-d {
 height: 84px;
 width: 70px;
 margin-left: 7px;
