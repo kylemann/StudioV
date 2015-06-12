@@ -158,6 +158,9 @@ font-size: 1.15em;
 line-height: 1.35em;
 color: #5E5E5E;
 }
+.formatting p, .formatting-header p, .formatting-header2 p {
+ font-weight: 300;   
+}
 
 a {
 text-decoration: none; 
