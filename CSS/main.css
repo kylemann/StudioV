@@ -980,7 +980,9 @@ width: 100%;
 padding: 0;
 }
     
-
+.formatting p, .formatting-header p, .formatting-header2 p {
+ font-weight: 300;   
+}
     
  .formatting {
 width: 66.6666667%;
@@ -988,6 +990,7 @@ padding: 80px 50px;
 max-width: 750px;
 font-size: 1.2em;
 line-height: 1.55em;
+ 
     }
     
 .formatting-header {
@@ -996,6 +999,7 @@ padding: 50px 10px 50px 20px;
 max-width: 775px;
 font-size: 1.3em;
 line-height: 1.8em;
+     
     }
     
 .formatting-header2 {
@@ -1004,6 +1008,7 @@ padding: 20px 10px 20px 10px;
 max-width: 775px;
 font-size: 1.3em;
 line-height: 1.8em;
+      
     }
     
 #signature {
