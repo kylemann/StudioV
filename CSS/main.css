@@ -1,7 +1,3 @@
-* {
- box-sizing: border-box;
-
-}
 
 /**************************************************
 ***************************************************
@@ -39,12 +35,12 @@ display: flex;
 nav ul li {
 display: flex;
 display: -webkit-flex;
-    justify-content: space-between;
+justify-content: space-between;
 -webkit-align-self: center;
 align-self: center;
 font-size: .85em;
 padding: 5px;
-    margin: 0 2px;
+margin: 0 2px;
 }
 
 nav ul li:first-child {
@@ -54,113 +50,19 @@ margin-right: 15px;
 
 /**************************************************
 ***************************************************
-Main wrapper styling
+Main wrapper styling - fonts, links, layout sizing / mobile
 ***************************************************
 **************************************************/
+* {
+ box-sizing: border-box;
 
-.none {
-display: none;   
-}
-
-img {
-width: 100%;   
-}
-
-
-.cover {
-display: none;  
-}
-
-
-.text-wrapper {
-font-family: 'Open Sans', sans-serif;
-}
-
-
-h2, h3, h4 {
-text-align: center; 
-font-family: 'Playfair Display', serif;
-color: #d64d2b;
--webkit-margin-before: .1em;
--webkit-margin-after: 1.25em;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px; 
-}
-
-
-h2 {
-font-size: 1.25em;      
-}
-
-h3, h4 {
-font-size: 1.2em;   
-}
-
-
-#contact h4 {
-color: black;
-font-size: 1.1em;
-margin-top: 10px;
-}
-
-.main-footer {
-text-align: center;
-font-size: .7rem;
-padding: 2px;
-background-color: #DEDEDE;
-color: grey;
-display: block;
-width: 100%;
-margin: 0 auto;
-}
-
-.main-footer-contact {
-text-align: center;
-font-size: .7rem;
-padding: 30px;
-background-color: #DEDEDE;
-color: grey;
-display: block;
-width: 100%;
-margin: 0 auto;
-}
-
-#home {
-display: none;      
-}
-.home2 {
- display: none;   
 }
 
 article {
 width: 90%; 
 margin: 0 auto;
 }
-
-.mobile-hide {
-display: none;   
-}
-
-.center {
-text-align: center;   
-}
-
-iframe {
-width: 100%;
-margin-bottom: 20px;
-}
-
-.formatting, .formatting-header, .formatting-header2 {
-width: 95%;
-padding: 10px 0px 10px 0px;  
-margin: 0 auto;
-font-size: 1.15em;
-line-height: 1.35em;
-color: #5E5E5E;
-}
-.formatting p, .formatting-header p, .formatting-header2 p {
- font-weight: 300;   
-}
+/*Links styling**/
 
 a {
 text-decoration: none; 
@@ -192,6 +94,38 @@ color: #d64d2b;
 
 }
 
+.center {
+text-align: center;   
+}
+
+.cover {
+display: none;  
+}
+
+#contact h4 {
+color: black;
+font-size: 1.1em;
+margin-top: 10px;
+}
+
+.contact-box {
+width: 90%;   
+padding: 20px 30px 20px 30px;  
+margin: 50px auto;
+}
+
+.formatting, .formatting-header, .formatting-header2 {
+width: 95%;
+padding: 10px 0px 10px 0px;  
+margin: 0 auto;
+font-size: 1.15em;
+line-height: 1.35em;
+color: #5E5E5E;
+}
+.formatting p, .formatting-header p, .formatting-header2 p {
+ font-weight: 300;   
+}
+
 .first::first-letter {
 font-size: 350%;
 color: #d64d2b;
@@ -201,6 +135,74 @@ padding-top: 6px;
 padding-right: 6px;
 padding-bottom: 10px;
 font-family: 'Playfair Display', serif;
+}
+
+h2, h3, h4 {
+text-align: center; 
+font-family: 'Playfair Display', serif;
+color: #d64d2b;
+-webkit-margin-before: .1em;
+-webkit-margin-after: 1.25em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px; 
+}
+
+h2 {
+font-size: 1.25em;      
+}
+
+h3, h4 {
+font-size: 1.2em;   
+}
+
+#home {
+display: none;      
+}
+.home2 {
+ display: none;   
+}
+
+img {
+width: 100%;   
+}
+
+iframe {
+width: 100%;
+margin-bottom: 20px;
+}
+
+.main-footer {
+text-align: center;
+font-size: .7rem;
+padding: 2px;
+background-color: #DEDEDE;
+color: grey;
+display: block;
+width: 100%;
+margin: 0 auto;
+}
+
+.main-footer-contact {
+text-align: center;
+font-size: .7rem;
+padding: 30px;
+background-color: #DEDEDE;
+color: grey;
+display: block;
+width: 100%;
+margin: 0 auto;
+}
+
+.mobile-hide {
+display: none;   
+}
+
+.none {
+display: none;   
+}
+
+.text-wrapper {
+font-family: 'Open Sans', sans-serif;
 }
 
 /**************************************************
@@ -217,39 +219,12 @@ margin: 15px auto;
 font-family: 'Open Sans', sans-serif;
 }
 
-.tuition-text3 {
-margin: 50px auto 50px auto;
-font-size: 3.75em;
-text-align: center;
-font-family: 'Open Sans', sans-serif;
-color: #d64d2b;    
-}
-
 .dollar {
 font-size: .5em;   
 color: #d64d2b; 
 vertical-align: super;
 }
 
-.month {
-font-size: .25em;   
-    
-}
-
-.study-type {
-font-size: .85em;
-font-style: italic;
-color: black;
-text-align: center;
-}
-
-p.tuition-header {
-color: grey;
-font-size: 3em;
-margin: 0 auto;
-text-align: center;
-}
-   
 .mask { 
 height: 1px; 
 margin: 25px auto 0 auto;
@@ -263,31 +238,7 @@ height: 1px;
 margin: 30px auto 40px auto;
 width:95%; 
 border-radius: 1px;
-/*      box-shadow:0 0 2px black;*/
 border-bottom: 1px solid #BCBCBC;
-    }
-     
-.tuition-text {
-margin: 0 auto;
-text-align: center;
-font-size: 1em;
-color: #757575;
-width: 80%;
-max-width: 300px;
-    text-align: left;
-}
-
-.who-for {
- font-size: 1em;
-font-weight: bold;
-color: #d64d2b;
-font-family: 'PT Sans Narrow', sans-serif;
-}
-
-.small-cap {
-font-family: 'Playfair Display SC', serif;   
-font-size: .85em;
-color: #d64d2b;
 }
 
 .map-for {
@@ -297,22 +248,20 @@ font-family: 'PT Sans Narrow', sans-serif;
 text-align: center;
 }
 
-.tuition-box {
- margin: 40px auto;  
-padding: 25px 5px 25px 5px; 
-    
+.month {
+font-size: .25em;       
 }
+
 .review-text3 {
 margin: 40px auto 40px auto;
 font-size: 2.5em;
 text-align: center;
 font-family: 'PT Sans Narrow', sans-serif;
 }
-    
-    
+       
 .review-text3 {  
 color: #d64d2b;   
-    }
+}
 
 .review-text, .review-text-name {
 margin: 0 auto;
@@ -320,72 +269,68 @@ text-align: center;
 font-size: 1.15em;
 color: #757575;
 max-width: 90%;
-        }
+}
 
 .review-text-name {
- margin-top: 40px;   
+margin-top: 40px;   
 }
+
+.small-cap {
+font-family: 'Playfair Display SC', serif;   
+font-size: .85em;
+color: #d64d2b;
+}
+
+.study-type {
+font-size: .85em;
+font-style: italic;
+color: black;
+text-align: center;
+}
+
+.tuition-text3 {
+margin: 50px auto 50px auto;
+font-size: 3.75em;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+color: #d64d2b;    
+}
+
+.tuition-text {
+margin: 0 auto;
+text-align: center;
+font-size: 1em;
+color: #757575;
+width: 80%;
+max-width: 300px;
+text-align: left;
+}
+
+.tuition-box {
+margin: 40px auto;  
+padding: 25px 5px 25px 5px; 
+}
+
+p.tuition-header {
+color: grey;
+font-size: 3em;
+margin: 0 auto;
+text-align: center;
+}
+
+.who-for {
+ font-size: 1em;
+font-weight: bold;
+color: #d64d2b;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
 /**************************************************
 ***************************************************
 Images and Icons
 ***************************************************
 **************************************************/
-
-
-#matthewimagemobile {
-max-width: 360px;
-margin: 30px auto 10px auto;
-}
-
-.iconcontact { 
-width: 40px;
-height: 40px;
-margin: 30px auto;     
-}
-.iconcontact1 {
-width: 40px;
-height: 40px;
-margin: 0 auto;    
-}
-
-.iconcontact-footer {
-    
-width: 40px;
-height: 40px;
-margin: 0 auto;
-}
-
-.iconcontact-review {
-    
-width: 60px;
-height: 60px;
-margin: 0 auto;   
-}
-
-
-
-.reviewimg {
-width: 125px;
-height: 125px;
-border-radius: 100%;
-background-color: orange;
-margin: 0 auto; 
-}
-
-#contact-footer {
-display: -webkit-flex;
-display: flex;
-width: 70%;
-max-width: 200px;
-/*background-color: white;*/
-padding: 0;
-margin: 40px auto;
-    
-}
-    
-.footer-box {
-width: 33.3333333%;
-    }
 
 #contact-matt {
 height: 150px;
@@ -399,6 +344,55 @@ background-size: cover;
 margin: 0 auto 20px auto;   
 }
 
+#contact-footer {
+display: -webkit-flex;
+display: flex;
+width: 70%;
+max-width: 200px;
+padding: 0;
+margin: 40px auto;   
+}
+
+.footer-box {
+width: 33.3333333%;
+}
+   
+.iconcontact { 
+width: 40px;
+height: 40px;
+margin: 30px auto;     
+}
+.iconcontact1 {
+width: 40px;
+height: 40px;
+margin: 0 auto;    
+}
+
+.iconcontact-footer {   
+width: 40px;
+height: 40px;
+margin: 0 auto;
+}
+
+.iconcontact-review {    
+width: 60px;
+height: 60px;
+margin: 0 auto;   
+}
+
+#matthewimagemobile {
+max-width: 360px;
+margin: 30px auto 10px auto;
+}
+
+.reviewimg {
+width: 125px;
+height: 125px;
+border-radius: 100%;
+background-color: orange;
+margin: 0 auto; 
+}
+
 
 /**************************************************
 ***************************************************
@@ -408,7 +402,6 @@ Pricing Page Layout Styling
 
 
 .monthlyprice {
-
 width: 110px;
 height: 110px;
 border-radius: 100%;
@@ -419,8 +412,6 @@ vertical-align: middle;
 line-height: 110px;
 color: white;
 }
-
-
 
 #pricing {
 display: inline-block;
@@ -536,10 +527,15 @@ right: 0;
 background: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,100));
 }
 
-.contact-box {
-width: 90%;   
-padding: 20px 30px 20px 30px;  
-margin: 50px auto;
+
+/**************************************************
+***************************************************
+Section Colors Mobile
+***************************************************
+**************************************************/
+
+.dark-color-mobile {
+background-color: #DEDEDE;   
 }
 
 .light-color-mobile {
@@ -549,10 +545,12 @@ background-color: #F5F5F5;
 .medium-color-mobile {
 background-color: #EBEBEB;      
 }
-    
-.dark-color-mobile {
-background-color: #DEDEDE;   
-}
+
+/**************************************************
+***************************************************
+Blockquotes
+***************************************************
+**************************************************/
 
 .blockquote {
 font-family: Georgia, serif;
@@ -576,6 +574,7 @@ left: -20px;
 top: -35px;
 color: #d64d2b;
 }
+
 .blockquote cite {
 color: #999999;
 font-size: .9em;
@@ -585,8 +584,7 @@ margin-top: 5px;
  
 .blockquote cite:before {
 content: "\2014 \2009";
-}
-    
+}  
 
 .blockquote-review {
 font-family: 'Open Sans', sans-serif;
@@ -600,7 +598,7 @@ color: #757575;
 }
     
 .blockquote-review:before {
-    font-family: Georgia, serif;
+font-family: Georgia, serif;
 display: block;
 content: "\201C";
 font-size: 5em;
@@ -621,7 +619,6 @@ font-style: normal;
 content: "\2014 \2009";
 }
 
-
 /**************************************************
 ***************************************************
 MEDIA QUERY - Above 690 PX - TABLETS
@@ -630,38 +627,37 @@ MEDIA QUERY - Above 690 PX - TABLETS
 
 @media only screen and (min-width: 690px) {
     
-    
-#pricingcolumn {
-display: -webkit-flex;
-display: flex;
-width: 100vw; 
-    }
-    
-    
+      
 #beginnertuition, #intermediatetuition, #advancedtuition {
 width: 33.3333333%; 
-    }
+}
+    
+#contact h4 {
+color: black;
+font-size: 1em;
+display: inherit;
+}
+
+.first::first-letter {
+ padding-top: 13px; 
+}
 
 #opening h2 {           
 font-size: 3em;
 text-decoration: none;
 font-family: 'Playfair Display', serif;
 }
-    
-    #contact h4 {
-color: black;
-font-size: 1em;
-display: inherit;
-}
-    
-    nav ul li {
+
+nav ul li {
 font-size: 1.25em;
 }
-    
-.first::first-letter {
- padding-top: 13px; 
-}
 
+#pricingcolumn {
+display: -webkit-flex;
+display: flex;
+width: 100vw; 
+}
+    
 }
 
 /**************************************************
@@ -670,14 +666,28 @@ MEDIA QUERY - Above 790 PX  DESKTOP
 ***************************************************
 **************************************************/
 
-
 @media only screen and (min-width: 790px) {
+    
+ 
+    
+    
     
 /**************************************************
 Navigation Bar Styling
 **************************************************/
 
- nav {
+    
+#logo-d {
+height: 84px;
+width: 70px;
+margin-left: 7px;
+margin-top: 5px;
+display: inline-block;
+margin-right: auto;
+border-radius: 5px;
+}
+    
+nav {
 display: -webkit-flex;
 display: flex;
 margin-top: 0;
@@ -687,7 +697,6 @@ height: 95px;
 -o-transition: all .5s ease-in-out;
 transition: all .5s ease-in-out;
 background: transparent;
-/*     clear: right;*/
 }
     
 nav ul {
@@ -704,29 +713,13 @@ padding: 15px;
 -webkit-align-self: center;
 align-self: center;
 width: auto;
-    margin: 0;
-}
-    
-/*
-nav ul li:first-child  {
-    margin-right: auto;
-}
-*/
-
-#logo-d {
-height: 84px;
-width: 70px;
-margin-left: 7px;
-margin-top: 5px;
-display: inline-block;
-margin-right: auto;
-border-radius: 5px;
+margin: 0;
 }
     
 nav.sticky {
 background-color: hsla(0, 0%, 0%, 0.62);
 background-image: none;
-    }
+}
     
 nav ul li a {
 display: -webkit-flex;
@@ -735,26 +728,18 @@ color: white;
     
 nav h2.hide {
 display: none; 
-    }
+}
+    
 
 /**************************************************
 Main-Wrapper Styling TYPE/COLOR/HOVER/DESKTOP-MOBILE HIDE
 **************************************************/
- 
-
-
-
     
-.desktop-hide {
-display: none;   
-     
- }
-    
-.mobile-hide {
-display: inherit;   
-    }
+article {
+padding: 50px 20px 50px 20px;
+width: 100%;
+}
 
-    
 .blockquote {
 font-family: Georgia, serif;
 font-size: 1em;
@@ -765,7 +750,6 @@ margin: 50px auto 0.25em auto;
 padding: 0.25em 40px;
 line-height: 1.65;
 position: relative;
-
 }
     
 .blockquote:before {
@@ -777,47 +761,57 @@ left: -20px;
 top: -58px;
 color: #d64d2b;
 }
+    
 .blockquote cite {
 color: #999999;
 font-size: .8em;
 display: block;
 margin-top: 5px;
-    font-style: normal;
+font-style: normal;
 }
- 
+
 .blockquote cite:before {
 content: "\2014 \2009";
 }
     
-    .blockquote-review {
-
+.blockquote-review {
 padding: 70px 10px;
 font-size: 1em;
 line-height: 1.65;
 font-style: italic;
-    }
+}
     
-    .blockquote-review:before {
+.blockquote-review:before {
 left: -50px;
 top: 15px;
-    }
+}
     
 #contact h4 {
 color: black;
 font-size: 1em;
 margin-top: 14px;
 }
-    
-article {
-padding: 50px 20px 50px 20px;
-width: 100%;
+
+#contact {
+display: none;      
 }
     
-    #iframe {
-/*margin: 0 auto;*/
-width: 100%;
+.contact-text {
+font-size: 2em;
+margin: 45px auto;
 }
 
+.desktop-hide {
+display: none;   
+}
+    
+.mobile-hide {
+display: inherit;   
+}
+    
+#iframe {
+width: 100%;
+}
       
 .iconcontact { 
 width: 40px;
@@ -828,80 +822,56 @@ height: 40px;
 width: 40px;
 height: 40px;
 margin: 0 auto;
+}   
+
+/* Desktop Section Colors */    
+.light-color {
+background-color: #F5F5F5;   
 }
-    
-    .light-color {
- background-color: #F5F5F5;   
-    
-}
-    
+
 .medium-color {
- background-color: #EBEBEB;   
-    
+background-color: #EBEBEB;   
 }
     
 .dark-color {
- background-color: #DEDEDE;   
+background-color: #DEDEDE;   
 }
-    
-#contact {
- display: none;   
-    
-}
-.contact-text {
-font-size: 2em;
-margin: 45px auto;
-        }
-
-    
-    
+       
     
 /**************************************************
 REVIEW PAGE STYLING
 **************************************************/
 
-  .review-block1 {
+.review-block1 {
 width: 66.666667%;
-/*padding: 80px;  */
-
-    
 }  
+
 #review-block3 {
 width: 33.3333333%;
 background: url(../images/review/review1.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
+}
 
-            }
-    
-    #review-block4 {
-        width: 33.3333333%;
+#review-block4 {
+width: 33.3333333%;
 background: url(../images/review/review-block4.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-            }
+}
     
-    #review-block5 {
-        width: 33.3333333%;
+#review-block5 {
+width: 33.3333333%;
 background: url(../images/review/reviewcover.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-            }
+}
     
-        #contact-transparency {
-        width: 33.3333333%;
+#contact-transparency {
+width: 33.3333333%;
 background: url(../images/Contact-Transparency.gif) no-repeat center center;
+}
+    
+#review-block3, #review-block4, #review-block5, #review-block5, #contact-transparency {
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
-background-size: cover;
-            }
+background-size: cover;  
+}
     
     
     /**************************************************
@@ -919,52 +889,34 @@ padding: 0;
     }
     
 #cover3 {
-     background: url(../images/lessoncover.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
+background: url(../images/lessoncover.jpg) no-repeat center center;  
 }
     
-    #cover5 {
-     background: url(../images/cover5.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
+#cover5 {
+background: url(../images/cover5.jpg) no-repeat center center;   
 }
     
-        #cover6 {
-     background: url(../images/lesson/cover6.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;   
+#cover6 {
+background: url(../images/lesson/cover6.jpg) no-repeat center center;  
 }
 
 #reviewcover {
-         background: url(../images/reviewcover.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;  
-    
+background: url(../images/reviewcover.jpg) no-repeat center center;   
 }
     
     #cover1 {
 background: url(../images/index/cover1-1.jpg)no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
 }
 
 #cover2 {
 background: url(../images/index/cover1.jpg)no-repeat center center;
+}
+    
+#cover3, #cover5, #cover6, #reviewcover, #cover1, #cover2 {
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
-background-size: cover;
+background-size: cover;  
 }
   
      
@@ -979,22 +931,26 @@ FLEXBOX - PAGE DESCIPTION AND RESPONSIVE SECTIONS
 display: -webkit-flex;
 display: flex;
 width: 100%;
-/*background-color: white;*/
 padding: 0;
 }
     
-.formatting p, .formatting-header p, .formatting-header2 p {
- font-weight: 300;   
+.contact-box {
+width: 33.3333333%;   
+padding: 60px 40px 60px 40px;  
+margin: 0;
 }
     
- .formatting {
+.formatting p, .formatting-header p, .formatting-header2 p {
+font-weight: 300;   
+}
+    
+.formatting {
 width: 66.6666667%;
 padding: 80px 50px;  
 max-width: 750px;
 font-size: 1.2em;
 line-height: 1.55em;
- 
-    }
+}
     
 .formatting-header {
 width: 66.6666667%;
@@ -1002,8 +958,7 @@ padding: 50px 10px 50px 20px;
 max-width: 775px;
 font-size: 1.3em;
 line-height: 1.8em;
-     
-    }
+}
     
 .formatting-header2 {
 width: 66.6666667%;
@@ -1011,96 +966,57 @@ padding: 20px 10px 20px 10px;
 max-width: 775px;
 font-size: 1.3em;
 line-height: 1.8em;
-      
-    }
-    
-#signature {
-height: 172.77px;
-width: 279.65px;
-background: url(../images/signature.svg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-margin: 0 auto 40px auto;     
-    }
-    
-    
-.contact-box {
-width: 33.3333333%;   
-padding: 60px 40px 60px 40px;  
-margin: 0;
-    }
-    
+}
+
 .tuition-box {
 width: 33.3333333%;   
 padding: 45px 40px 45px 40px;  
 margin: 0;   
-    }
-    
-    
+}
+   
 #review-pic1 {
 width: 50%;
 background: url(../images/review-pic1.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-        
     }   
     
 #levelpic {
 width: 33.3333333%;
-background: url(../images/levelpic.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-        
+background: url(../images/levelpic.jpg) no-repeat center center;    
     }
     
-    #tuition-pic {
+#tuition-pic {
 width: 33.3333333%;
 background: url(../images/tuitionpic.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-        
-    }
+}
 
-    
 #lessonside {
 width: 33.3333333%;
 background: url(../images/lesson/lessonpic.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-        
-    }
-
+}
 
 #monthlypic {
 width: 33.3333333%;
 background: url(../images/index/monthlypic.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover; 
 }
 
 #matthewimage {
 width: 33.3333333%;
 background: url(../images/index/matthewimage.jpg) no-repeat center center;
+}
+    
+#signature {
+height: 172.77px;
+width: 279.65px;
+background: url(../images/signature.svg) no-repeat center center;
+margin: 0 auto 40px auto;     
+}
+
+#review-pic1, #levelpic, #tuition-pic, #lessonside, #monthlypic, #matthewimage, #signature   {
 -webkit-background-size: cover; 
 -moz-background-size: cover; 
 -o-background-size: cover; 
-background-size: cover; 
-    }
-
-
-
+background-size: cover;
+}
     
     
 /**************************************************
@@ -1108,42 +1024,28 @@ background-size: cover;
 Landing Page Styling and Header
 ***************************************************
 **************************************************/
-     
-#home {
-width: 100%;
-height: 100vh; 
-position: relative;
-display: inherit;
-background: url(../images/index/opening-page.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-}  
-        
-#opening h2 {           
-font-size: 5em;
-text-decoration: none;
-    padding: 0;
-}
-
-#opening {
-background-color: transparent;
-margin: auto;
-position: absolute;
-top: 0; left: 0; bottom: 0; right: 0;
-height: 400px;
-/*    background-color: red;*/
+ 
     
+a#learn {
+display: flex;
+display: -webkit-flex;
+width: 170px;
+height: 40px;
+padding: 8px 35px 8px 43px;
+background-color: hsla(0, 0%, 0%, 0.62);
+font-size: 16px;
+margin: 75px auto 0 auto;
+color: white;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+border-radius: 3px;
 }
-     
-#statement {
-        
-width: 100%;
-margin: 0 auto;
-/*color: #d64d2b;*/
-
+    
+a#learn:hover {
+background-color: hsla(51, 100%, 100%, 0.75);
+color: black;   
 }
+   
 .header-nav {
 display: inline;
 color: white;  
@@ -1155,63 +1057,55 @@ margin: 0 0 0 20px;
 /*font-family: 'Open Sans', sans-serif;*/
 font-weight: 100;
 align-self: center;
-    }
+}
     
-#statement h2 {
+#home {
+width: 100%;
+height: 100vh; 
+position: relative;
+display: inherit;
+background: url(../images/index/opening-page.jpg) no-repeat center center;
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;
+}
         
-color: white;
-margin-bottom: -15px;
-margin-top: 50px;
-/*
--webkit-margin-before: 50px;
--webkit-margin-after: -15px;
--webkit-margin-start: 0px;
--webkit-margin-end: 0px; 
-*/
-font-family: 'Playfair Display', serif;
-letter-spacing: .015em;       
+#opening h2 {           
+font-size: 5em;
+text-decoration: none;
+padding: 0;
 }
 
+#opening {
+background-color: transparent;
+margin: auto;
+position: absolute;
+top: 0; left: 0; bottom: 0; right: 0;
+height: 400px;  
+}
+    
 #opening p {
 text-align: center;
 font-size: 1.45em;
-/*line-height: 1.2em;*/
-/*
-    -webkit-margin-before: -100px;
--webkit-margin-after: 50px;
-*/
-
-    font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
 margin: 0 auto;
-/*font-family: 'PT Sans Narrow', sans-serif;*/
-/*font-family: 'Arvo', serif;*/
 color: #d64d2b;
-    font-weight: 400;
-     }
+font-weight: 400;
+}
     
-    
-a#learn {
-    display: flex;
-   display: -webkit-flex;
-width: 170px;
-height: 40px;
-padding: 8px 35px 8px 43px;
-background-color: hsla(0, 0%, 0%, 0.62);
-font-size: 16px;
-margin: 75px auto 0 auto;
+#statement h2 {       
 color: white;
-text-align: center;
-    font-family: 'Open Sans', sans-serif;
-border-radius: 3px;
+margin-bottom: -15px;
+margin-top: 50px;
+font-family: 'Playfair Display', serif;
+letter-spacing: .015em;       
 }
     
-a#learn:hover {
- background-color: hsla(51, 100%, 100%, 0.75);
-    color: black;
-    
+#statement {       
+width: 100%;
+margin: 0 auto;
 }
-    
-    
  
     
 /**************************************************
@@ -1225,49 +1119,7 @@ Secondary Page Header styling AND Images
 width: 100%;
 height: 35vh; 
 position: relative;
-/*opacity: none;*/
-    display: inherit;
-}
-    
-    
-#lessondesktop {
-
-background: url(../images/pageheaders/lessondesktop.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-    
-#reviewdesktop {
-    
-background: url(../images/pageheaders/review-desktop.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-    
-#tuitiondesktop-pic {
-    
-background: url(../images/pageheaders/tuitiondesktop.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
-}
-    
-    #contact-desktop {
-    
-background: url(../images/pageheaders/contactdesktop.jpg) no-repeat center center;
--webkit-background-size: cover; 
--moz-background-size: cover; 
--o-background-size: cover; 
-background-size: cover;
-    
+display: inherit;
 }
     
 .opening1 {
@@ -1278,13 +1130,36 @@ background-size: cover;
 font-size: 4.5em;
 color: white;
 font-family: 'Playfair Display', serif;
-    letter-spacing: .03em;
-    margin-top: -55px;
-    margin-left: 75px;
-/*font-family: 'Open Sans', sans-serif;*/
+letter-spacing: .03em;
+margin-top: -55px;
+margin-left: 75px;
 font-weight: 100;
-    text-align: left;
+text-align: left;
 }
-
-
+    
+/* Header Page Images */
+        
+#lessondesktop {
+background: url(../images/pageheaders/lessondesktop.jpg) no-repeat center center;   
+}
+    
+#reviewdesktop {    
+background: url(../images/pageheaders/review-desktop.jpg) no-repeat center center    
+}
+   
+#tuitiondesktop-pic {   
+background: url(../images/pageheaders/tuitiondesktop.jpg) no-repeat center center;    
+}
+    
+#contact-desktop {
+background: url(../images/pageheaders/contactdesktop.jpg) no-repeat center center;
+}
+    
+#lessondesktop, #reviewdesktop, #tuitiondesktop-pic, #contact-desktop {
+-webkit-background-size: cover; 
+-moz-background-size: cover; 
+-o-background-size: cover; 
+background-size: cover;    
+}
+ 
 }
